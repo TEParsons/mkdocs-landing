@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+  <link rel="icon" type="image/x-icon" href={{ config.theme.favicon }}>
+  <link href="{{ 'css/style.css' | url }}" rel="stylesheet">
+  <link href="{{ 'css/responsivity.css' | url }}" rel="stylesheet">
+  {%- for path in config.extra_css %}
+  <link href="{{ path | url }}" rel="stylesheet">
+  {%- endfor %}
+  <script src="https://kit.fontawesome.com/b57355f8ac.js" crossorigin="anonymous"></script>
+  <script id="altmetric-embed-js" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/altmetric_badges-e7ba41a192efc3e63f5d48f8a1916dec4b1b49c01075bc7b39481408957b3b28.js"></script>
+  <link id="altmetric-embed-css" rel="stylesheet" type="text/css" href="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed-59614f5c46b49b21eeef3bb28c4fb38d1e7069e8d014752fcb66e84942556802.css">
+</head>
+
+<body id="background">
+  <content id="content">
+  <header id="header">
+    <h1 id="title">{{ page.title }}</h1>
+  </header>
+  <main id="page">
+    <nav id="toc">
+      {% for toc_item in page.toc %}
+      <a href="{{ toc_item.url }}">{{ toc_item.title }}</a>
+      {% endfor %}
+    </nav>
+    {{ page.content }}
+    <nav id="page-controls">
+        <a href={{ "." | url }} id="return-home">
+            <i class="fa fa-arrow-left" alt="⇦"></i> Home
+        </a>
+        <a href="#content" id="return-top">
+          <i class="fa fa-arrow-up" alt="⇧"></i> Return to top
+        </a>
+    </nav>
+  </main>
+  </content>
+  <footer id="footer">
+    {% if config.theme.footer %}
+    {{ config.theme.footer | markdown }}
+    {% endif %}
+
+    {% if config.theme.page_source %}
+    <a id=page-source href={{ config.theme.page_source.link }}><i class="fa-brands fa-{{ config.theme.page_source.icon }}"></i> Page source</a>
+    {% endif %}
+
+    {% for script in config.extra_javascript %}
+    {{ script | script_tag }}
+    {% endfor %}
+  </footer>
+</body>
+
+</html>

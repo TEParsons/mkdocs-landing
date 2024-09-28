@@ -1,0 +1,86 @@
+name: landing
+
+# customisation options
+
+# images
+favicon: assets/favicon.png
+avatar: assets/logo.png
+background: assets/background.png
+# information
+tagline: 
+footer: |
+    Compiled from markdown using [MkDocs](https://www.mkdocs.org/). Theme by [Todd Parsons](https://toddparsons.co.uk).
+socials:
+
+# style options
+content-box-opacity: 80%
+
+# theme colours
+colors:
+  # colours
+  primary: "#05b2dc"
+  secondary: "#ef9B0f"
+  tertiary: "#ef3e36"
+  # shades
+  base: "#ffffff"
+  mantle: "#f5f4f5"
+  crust: "#d4d2d5"
+  overlay: "#9B9B9E"
+  # text
+  text: "#343233"
+  hltext: "#ffffff"
+  # background-specific text
+  primary-text: var(--text)
+  secondary-text: var(--hltext)
+  tertiary-text: var(--hltext)
+  base-text: var(--text)
+  mantle-text: var(--text)
+  crust-text: var(--text)
+  overlay-text: var(--hltext)
+# dark mode variants
+colors-dark:
+  # colours
+  primary: inherit
+  secondary: inherit
+  tertiary: inherit
+  # shades
+  base: "#343233"
+  mantle: "#373536"
+  crust: "#3E3C3D"
+  overlay: "#646461"
+  # text
+  text: "#ffffff"
+  hltext: "#343233"
+  # background-specific text
+  primary-text: var(--hltext)
+  secondary-text: var(--text)
+  tertiary-text: var(--text)
+  base-text: var(--text)
+  mantle-text: var(--text)
+  crust-text: var(--text)
+  overlay-text: var(--hltext)
+
+# theme fonts
+fonts:
+  # headings
+  heading: Poppins
+  # body
+  body: Hind
+  # monospace
+  mono: JetBrains Mono
+font-files:
+  # headings
+  heading: 
+  heading-bold: 
+  heading-italic: 
+  heading-bold-italic: 
+  # body
+  body: 
+  body-bold: 
+  body-italic: 
+  body-bold-italic: 
+  # monospace
+  mono: 
+  mono-bold: 
+  mono-italic: 
+  mono-bold-italic: 

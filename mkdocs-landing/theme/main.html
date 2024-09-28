@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family={{ config.theme.fonts.heading }}');
+    @import url('https://fonts.googleapis.com/css2?family={{ config.theme.fonts.body }}');
+    @import url('https://fonts.googleapis.com/css2?family={{ config.theme.fonts.mono }}');
+
+    :root {
+      /* colours */
+      --primary: {{ config.theme.colours.primary }};
+      --secondary: {{ config.theme.colours.secondary }};
+      --tertiary: {{ config.theme.colours.tertiary }};
+      /* shades */
+      --base: {{ config.theme.colours.base }};
+      --mantle: {{ config.theme.colours.mantle }};
+      --crust: {{ config.theme.colours.crust }};
+      --overlay: {{ config.theme.colours.overlay }};
+      /* text */
+      --text: {{ config.theme.colours.text }};
+      --hltext: {{ config.theme.colours.hltext }};
+      color: var(--text);
+      /* background-specific text */
+      --primary-text: {{ config.theme.colours.primary-text }};
+      --secondary-text: {{ config.theme.colours.secondary-text }};
+      --tertiary-text: {{ config.theme.colours.tertiary-text }};
+      --base-text: {{ config.theme.colours.base-text }};
+      --mantle-text: {{ config.theme.colours.mantle-text }};
+      --crust-text: {{ config.theme.colours.crust-text }};
+      --overlay-text: {{ config.theme.colours.overlay-text }};
+      /* fonts */
+      --heading: {{ config.theme.fonts.heading }};
+      --body: {{ config.theme.fonts.body }};
+      --mono: {{ config.theme.fonts.mono }};
+      font-family: var(--body); 
+    }
+    #background {
+      background-image: url({{config.theme.background}});
+    }
+    #content {
+      background: color-mix(in srgb, var(--base) {{config.theme.content-box-opacity}}, transparent);
+    }
+  </style>
+  <link rel="icon" type="image/x-icon" href={{ config.theme.favicon }}>
+  <link href="{{ 'css/style.css' | url }}" rel="stylesheet">
+  <link href="{{ 'css/responsivity.css' | url }}" rel="stylesheet">
+  {%- for path in config.extra_css %}
+  <link href="{{ path | url }}" rel="stylesheet">
+  {%- endfor %}
+  <script src="https://kit.fontawesome.com/b57355f8ac.js" crossorigin="anonymous"></script>
+  <script id="altmetric-embed-js" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/altmetric_badges-e7ba41a192efc3e63f5d48f8a1916dec4b1b49c01075bc7b39481408957b3b28.js"></script>
+  <link id="altmetric-embed-css" rel="stylesheet" type="text/css" href="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed-59614f5c46b49b21eeef3bb28c4fb38d1e7069e8d014752fcb66e84942556802.css">
+</head>
+
+<body id="background">
+  <content id="content">
+  <header id="header">
+    <img id="avatar" src="{{ config.theme.avatar | url }}" />
+    <nav id="socials">
+      {% for social in config.theme.socials %}
+      <a href={{ social.link }}><i class="fa-brands fa-{{ social.icon }}" alt={{ social.label }}></i></a>
+      {% endfor %}
+    </nav>
+    <h1 id="title"><a href={{ "." | url }}>{{ config.site_name }}</a></h1>
+    {{ config.theme.tagline | markdown(id="tagline") }}
+  </header>
+  <main id="page">
+    <nav id="toc">
+      {% for toc_item in page.toc %}
+      <a href="{{ toc_item.url }}">{{ toc_item.title }}</a>
+      {% endfor %}
+    </nav>
+    {{ page.content }}
+    <nav id="page-controls">
+      <a href="#content" id="return-top">
+        <i class="fa fa-arrow-up" alt="⇧"></i> Return to top
+      </a>
+    </nav>
+  </main>
+  </content>
+  <footer id="footer">
+    {% if config.theme.footer %}
+    {{ config.theme.footer | markdown }}
+    {% endif %}
+
+    {% if config.theme.page_source %}
+    <a id=page-source href={{ config.theme.page_source.link }}><i class="fa-brands fa-{{ config.theme.page_source.icon }}"></i> Page source</a>
+    {% endif %}
+
+    {% for script in config.extra_javascript %}
+    {{ script | script_tag }}
+    {% endfor %}
+  </footer>
+</body>
+
+</html>
