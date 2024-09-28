@@ -30,13 +30,13 @@ colors:
   text: "#343233"
   hltext: "#ffffff"
   # background-specific text
-  primary-text: var(--text)
-  secondary-text: var(--hltext)
-  tertiary-text: var(--hltext)
-  base-text: var(--text)
-  mantle-text: var(--text)
-  crust-text: var(--text)
-  overlay-text: var(--hltext)
+  primary_text: var(--text)
+  secondary_text: var(--hltext)
+  tertiary_text: var(--hltext)
+  base_text: var(--text)
+  mantle_text: var(--text)
+  crust_text: var(--text)
+  overlay_text: var(--hltext)
 # dark mode variants
 colors-dark:
   # colours
@@ -52,13 +52,13 @@ colors-dark:
   text: "#ffffff"
   hltext: "#343233"
   # background-specific text
-  primary-text: var(--hltext)
-  secondary-text: var(--text)
-  tertiary-text: var(--text)
-  base-text: var(--text)
-  mantle-text: var(--text)
-  crust-text: var(--text)
-  overlay-text: var(--hltext)
+  primary_text: var(--hltext)
+  secondary_text: var(--text)
+  tertiary_text: var(--text)
+  base_text: var(--text)
+  mantle_text: var(--text)
+  crust_text: var(--text)
+  overlay_text: var(--hltext)
 
 # theme fonts
 fonts:

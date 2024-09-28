@@ -1,0 +1,210 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    background-color: var(--base);
+    background-attachment: fixed;
+    background-repeat: repeat;
+}
+
+
+/** Layout **/
+
+#header, #page {
+    margin: 4rem 0;
+    position: relative;
+}
+
+#content {
+    display: block;
+    position: relative;
+    padding: 6rem;
+    max-width: 40rem;
+    margin: 0 auto 0 auto;
+}
+
+#footer {
+    position: relative;
+    text-align: right;
+    padding: 2rem calc(50% - 24rem);
+    background-color: var(--overlay);
+    color: var(--overlay-text)
+}
+
+#page-source {
+    display: block;
+    margin: 1em 0;
+}
+
+article {
+    border: 1px solid var(--crust);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-left: -1rem;
+}
+
+#page-controls {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+#return-home {
+    grid-column-start: 1;
+    justify-self: left;
+}
+
+#return-top {
+    grid-column-start: 2;
+    justify-self: right;
+}
+
+
+/** Header **/
+
+#header {
+    display: grid;
+    align-items: end;
+    grid-template-columns: 8rem auto;
+}
+
+#title, #title a {
+    grid-column-end: span 2;
+    font-size: 6rem;
+    margin: 1rem 0;
+    color: var(--text);
+    line-height: 1em;
+}
+#tagline, #tagline a {
+    grid-column-end: span 2;
+    font-family: var(--heading);
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+#socials {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1em);
+    justify-content: left;
+    grid-gap: .5em;
+    font-size: 2rem;
+}
+#avatar {
+    object-fit: cover;
+    margin: 0 1rem 0 0;
+    border-radius: 50%;
+    box-shadow: 0 0 2rem var(--shadow);
+}
+
+
+/** Table of contents **/
+
+#toc {
+    position: absolute;
+    right: calc(100% + 5rem);
+    text-align: right;
+}
+#toc a {
+    display: block;
+    white-space: nowrap;
+    margin: 0.5rem 0;
+}
+
+
+/** Headings **/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading);
+    margin-bottom: 0.2rem;
+    margin-top: 1em;
+}
+h1 {
+    font-size: 1.5rem;
+    margin-top: 2em;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.2rem;
+}
+h4 {
+    font-size: 1rem;
+}
+h5 {
+    font-size: 1rem;
+}
+h6 {
+    font-size: 1rem;
+}
+
+
+/** Typography **/
+
+a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--tertiary);
+}
+
+pre, code, blockquote {
+    font-family: var(--mono);
+    background-color: var(--mantle);
+}
+
+p {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/** Block elements **/
+
+img {
+    max-width: calc(100% - 2rem);
+    box-shadow: 0 0 1rem var(--shadow);
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+blockquote {
+    margin: 0;
+    padding: 1rem;
+}
+blockquote + ul {
+    margin-top: 0.5rem;
+    text-align: right;
+    list-style-type: none;
+}
+
+pre {
+    padding: 1rem;
+}
+
+.altmetric-citation {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 1rem;
+    margin: 1rem 0;
+}
+.altmetric-embed img {
+    margin: 1rem;
+    box-shadow: none;
+}
+
+
+
+
+

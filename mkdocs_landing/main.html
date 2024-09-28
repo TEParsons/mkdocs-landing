@@ -9,27 +9,27 @@
     @import url('https://fonts.googleapis.com/css2?family={{ config.theme.fonts.mono }}');
 
     :root {
-      /* colours */
-      --primary: {{ config.theme.colours.primary }};
-      --secondary: {{ config.theme.colours.secondary }};
-      --tertiary: {{ config.theme.colours.tertiary }};
+      /* colors */
+      --primary: {{ config.theme.colors.primary }};
+      --secondary: {{ config.theme.colors.secondary }};
+      --tertiary: {{ config.theme.colors.tertiary }};
       /* shades */
-      --base: {{ config.theme.colours.base }};
-      --mantle: {{ config.theme.colours.mantle }};
-      --crust: {{ config.theme.colours.crust }};
-      --overlay: {{ config.theme.colours.overlay }};
+      --base: {{ config.theme.colors.base }};
+      --mantle: {{ config.theme.colors.mantle }};
+      --crust: {{ config.theme.colors.crust }};
+      --overlay: {{ config.theme.colors.overlay }};
       /* text */
-      --text: {{ config.theme.colours.text }};
-      --hltext: {{ config.theme.colours.hltext }};
+      --text: {{ config.theme.colors.text }};
+      --hltext: {{ config.theme.colors.hltext }};
       color: var(--text);
       /* background-specific text */
-      --primary-text: {{ config.theme.colours.primary-text }};
-      --secondary-text: {{ config.theme.colours.secondary-text }};
-      --tertiary-text: {{ config.theme.colours.tertiary-text }};
-      --base-text: {{ config.theme.colours.base-text }};
-      --mantle-text: {{ config.theme.colours.mantle-text }};
-      --crust-text: {{ config.theme.colours.crust-text }};
-      --overlay-text: {{ config.theme.colours.overlay-text }};
+      --primary-text: {{ config.theme.colors.primary_text }};
+      --secondary-text: {{ config.theme.colors.secondary_text }};
+      --tertiary-text: {{ config.theme.colors.tertiary_text }};
+      --base-text: {{ config.theme.colors.base_text }};
+      --mantle-text: {{ config.theme.colors.mantle_text }};
+      --crust-text: {{ config.theme.colors.crust_text }};
+      --overlay-text: {{ config.theme.colors.overlay_text }};
       /* fonts */
       --heading: {{ config.theme.fonts.heading }};
       --body: {{ config.theme.fonts.body }};
@@ -40,7 +40,7 @@
       background-image: url({{config.theme.background}});
     }
     #content {
-      background: color-mix(in srgb, var(--base) {{config.theme.content-box-opacity}}, transparent);
+      background: color-mix(in srgb, var(--base) "{{ config.theme.content_box_opacity }}", transparent);
     }
   </style>
   <link rel="icon" type="image/x-icon" href={{ config.theme.favicon }}>

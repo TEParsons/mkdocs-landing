@@ -1,0 +1,113 @@
+site_name: Todd Parsons
+
+docs_dir: docs_src
+draft_docs: vault
+site_dir: docs
+
+theme:
+  name: mkdocs
+  custom_dir: mkdocs_landing/
+
+  favicon: assets/tp.png
+  avatar: assets/staff-picture.jpg
+  background: "\"\""
+  tagline: |
+    he/him /[tɒd pɑsənz](http://ipa-reader.xyz/?text=tɒd%20pɑsənz)/
+  footer: |
+      Compiled from markdown using [MkDocs](https://www.mkdocs.org/), hosted via [GitHub Pages](https://pages.github.com/).
+  page_source: 
+    link: https://github.com/TEParsons/toddparsons
+    icon: github
+  socials:
+    - label: Email
+      link: mailto:todd.e.parsons@gmail.com
+      icon: at
+    - label: GitHub
+      link: https://github.com/TEParsons
+      icon: github
+    - label: ORCiD
+      link: https://orcid.org/0000-0002-6192-8414
+      icon: orcid
+    - label: Google Scholar
+      link: https://scholar.google.co.uk/citations?user=dPnWdLUAAAAJ&hl=en
+      icon: google-scholar
+    - label: LinkedIn
+      link: https://www.linkedin.com/in/todd-parsons-056a459a
+      icon: linkedin
+
+  # style options
+  content-box-opacity: 80%
+
+  # theme colours
+  colors:
+    # colours
+    primary: "#05b2dc"
+    secondary: "#ef9B0f"
+    tertiary: "#ef3e36"
+    # shades
+    base: "#ffffff"
+    mantle: "#f5f4f5"
+    crust: "#d4d2d5"
+    overlay: "#9B9B9E"
+    # text
+    text: "#343233"
+    hltext: "#ffffff"
+    # background-specific text
+    primary_text: var(--text)
+    secondary_text: var(--hltext)
+    tertiary_text: var(--hltext)
+    base_text: var(--text)
+    mantle_text: var(--text)
+    crust_text: var(--text)
+    overlay_text: var(--hltext)
+  # dark mode variants
+  colors-dark:
+    # colours
+    primary: inherit
+    secondary: inherit
+    tertiary: inherit
+    # shades
+    base: "#343233"
+    mantle: "#373536"
+    crust: "#3E3C3D"
+    overlay: "#646461"
+    # text
+    text: "#ffffff"
+    hltext: "#343233"
+    # background-specific text
+    primary_text: var(--hltext)
+    secondary_text: var(--text)
+    tertiary_text: var(--text)
+    base_text: var(--text)
+    mantle_text: var(--text)
+    crust_text: var(--text)
+    overlay_text: var(--hltext)
+
+  # theme fonts
+  fonts:
+    # headings
+    heading: Poppins
+    # body
+    body: Hind
+    # monospace
+    mono: JetBrains Mono
+  font-files:
+    # headings
+    heading: 
+    heading-bold: 
+    heading-italic: 
+    heading-bold-italic: 
+    # body
+    body: 
+    body-bold: 
+    body-italic: 
+    body-bold-italic: 
+    # monospace
+    mono: 
+    mono-bold: 
+    mono-italic: 
+    mono-bold-italic: 
+
+hooks:
+  - mkdocs_landing/hooks/md_filter.py
+  - mkdocs_landing/hooks/layout.py
