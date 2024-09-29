@@ -32,7 +32,7 @@ colors:
   text: "#343233"
   hltext: "#ffffff"
   # background-specific text
-  primary_text: var(--text)
+  primary_text: var(--hltext)
   secondary_text: var(--hltext)
   tertiary_text: var(--hltext)
   base_text: var(--text)

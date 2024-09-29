@@ -30,8 +30,11 @@ body {
     position: relative;
     text-align: right;
     padding: 2rem calc(50% - 24rem);
-    background-color: var(--overlay);
-    color: var(--overlay-text)
+    background-color: var(--primary);
+    color: var(--primary-text)
+}
+#footer a:not(:hover) {
+    color: var(--primary-text);
 }
 
 #page-source {
