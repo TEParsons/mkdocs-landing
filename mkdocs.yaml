@@ -10,29 +10,22 @@ theme:
   favicon: "branding/favicon.png"
   avatar: "branding/logo.png"
   tagline: |
-    he/him /[tɒd pɑsənz](http://ipa-reader.xyz/?text=tɒd%20pɑsənz)/
+    /[lændɪŋ](http://ipa-reader.xyz/?text=lændɪŋ)/
   footer: |
       Compiled from markdown using [MkDocs](https://www.mkdocs.org/), hosted via [GitHub Pages](https://pages.github.com/).
   page_source: 
-    link: https://github.com/TEParsons/toddparsons
+    link: https://github.com/TEParsons/mkdocs-landing
     icon: github
   socials:
     - label: Email
       link: mailto:todd.e.parsons@gmail.com
       icon: at
     - label: GitHub
-      link: https://github.com/TEParsons
+      link: https://github.com/TEParsons/mkdocs-landing
       icon: github
-    - label: ORCiD
-      link: https://orcid.org/0000-0002-6192-8414
-      icon: orcid
-    - label: Google Scholar
-      link: https://scholar.google.co.uk/citations?user=dPnWdLUAAAAJ&hl=en
-      icon: google-scholar
-    - label: LinkedIn
-      link: https://www.linkedin.com/in/todd-parsons-056a459a
-      icon: linkedin
-
+    - label: Theme Gallery
+      link: https://github.com/mkdocs/catalog?tab=readme-ov-file#-theming
+      icon: book
 
 hooks:
   - mkdocs_landing/hooks/md_filter.py
