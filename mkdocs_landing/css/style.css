@@ -72,7 +72,6 @@ article {
 header#header {
     display: grid;
     align-items: end;
-    grid-template-columns: 8rem auto 8rem;
 }
 header#header #title,
 header#header #title a {
