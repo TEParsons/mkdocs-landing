@@ -31,6 +31,8 @@ jobs:
     - name: Commit
       run: |
         git add --all
+        git config --global user.email "todd.e.parsons@googlemail.com"
+        git config --global user.name "Todd Parsons"
         git commit --all -m "sys: Build documentation"
     
     - name: Push
