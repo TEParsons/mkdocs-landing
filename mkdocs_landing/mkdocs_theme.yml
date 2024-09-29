@@ -45,7 +45,7 @@ colors:
   crust_text: var(--text)
   overlay_text: var(--hltext)
 # dark mode variants
-colors-dark:
+colors_dark:
   # colours
   primary: inherit
   secondary: inherit

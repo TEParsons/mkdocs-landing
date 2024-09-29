@@ -36,6 +36,33 @@
       --mono: {{config.theme.fonts.mono }};
       font-family: var(--body); 
     }
+    /* dark mode */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        /* colors */
+        --primary: {{config.theme.colors_dark.primary}};
+        --secondary: {{config.theme.colors_dark.secondary}};
+        --tertiary: {{config.theme.colors_dark.tertiary}};
+        /* shades */
+        --base: {{config.theme.colors_dark.base}};
+        --mantle: {{config.theme.colors_dark.mantle}};
+        --crust: {{config.theme.colors_dark.crust}};
+        --overlay: {{config.theme.colors_dark.overlay}};
+        /* text */
+        --text: {{config.theme.colors_dark.text}};
+        --hltext: {{config.theme.colors_dark.hltext}};
+        color: var(--text);
+        /* background-specific text */
+        --primary-text: {{config.theme.colors_dark.primary_text}};
+        --secondary-text: {{config.theme.colors_dark.secondary_text}};
+        --tertiary-text: {{config.theme.colors_dark.tertiary_text}};
+        --base-text: {{config.theme.colors_dark.base_text}};
+        --mantle-text: {{config.theme.colors_dark.mantle_text}};
+        --crust-text: {{config.theme.colors_dark.crust_text}};
+        --overlay-text: {{config.theme.colors_dark.overlay_text}};
+      }
+    }
+    /* style settings */
     #background {
       background-color: {{config.theme.background_color}};
       {% if config.theme.background|length %}
