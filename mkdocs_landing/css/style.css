@@ -76,7 +76,7 @@ article {
 header#header {
     display: grid;
     align-items: end;
-    grid-template-columns: 8rem auto auto;
+    grid-template-columns: 8rem auto 8rem;
 }
 header#header #title,
 header#header #title a {
@@ -112,6 +112,7 @@ nav#socials {
     object-fit: cover;
     margin: 0 1rem 0 0;
     border-radius: 1rem;
+    max-width: calc(100% - 1rem);
 }
 
 
@@ -145,7 +146,7 @@ h6 {
     margin-top: 1em;
 }
 h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 2em;
 }
 h2 {

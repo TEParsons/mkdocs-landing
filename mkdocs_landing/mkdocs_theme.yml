@@ -21,6 +21,7 @@ header_layout:
 content_box_opacity: 100%
 content_padding: 3rem
 background_color: var(--base)
+avatar_size: 8rem
 round_avatar: False
 border_left: none
 border_right: none

@@ -42,6 +42,9 @@ The box containing your site content will be your base color, this parameter con
 ### `background_color`
 The colour of the background. This will display underneath the background image, if there is one.
 
+### `avatar_size`
+The width of the avatar, default is 8rem.
+
 ### `round_avatar`
 If True, then the avatar will be cropped into a circle.
 

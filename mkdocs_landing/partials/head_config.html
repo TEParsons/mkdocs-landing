@@ -60,6 +60,9 @@
         }
       }
       /* style settings */
+      header#header {
+        grid-template-columns: {{ config.theme.avatar_size }} auto {{ config.theme.avatar_size }};
+      }
       body#background {
         background-color: {{config.theme.background_color}};
         {% if config.theme.background|length %}
