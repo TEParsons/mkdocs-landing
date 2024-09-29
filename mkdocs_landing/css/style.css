@@ -32,11 +32,7 @@ footer#footer {
     position: relative;
     text-align: right;
     padding: 2rem calc(50% - 24rem);
-    background-color: var(--primary);
-    color: var(--primary-text);
-}
-footer#footer a:not(:hover) {
-    color: var(--primary-text);
+    background-color: var(--mantle);
 }
 
 #page-source {
