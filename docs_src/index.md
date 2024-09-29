@@ -43,6 +43,12 @@ The colour of the background. This will display underneath the background image,
 #### `round_avatar`
 If True, then the avatar will be cropped into a circle.
 
+#### `content_padding`
+The distance between the horizontal edges of your content and the edges of the content box.
+
+#### `border_left` / `border_right`
+The border on either side of the content box (defined using the same syntax as in `border-left`/`border-right` in CSS)
+
 ## Colors
 The theme has an attribute `colors`, which has the following sub-attributes.
 

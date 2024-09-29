@@ -13,16 +13,16 @@ body {
 
 /** Layout **/
 
-#header, #page {
-    margin: 4rem 0;
+header#header, #page {
+    padding-top: 4rem;
     position: relative;
 }
 
-#content {
+content#content {
     display: block;
     position: relative;
-    padding: 6rem;
-    max-width: 40rem;
+    padding-bottom: 4rem;
+    max-width: 46rem;
     margin: 0 auto 0 auto;
 }
 
@@ -31,7 +31,7 @@ footer#footer {
     text-align: right;
     padding: 2rem calc(50% - 24rem);
     background-color: var(--primary);
-    color: var(--primary-text)
+    color: var(--primary-text);
 }
 footer#footer a:not(:hover) {
     color: var(--primary-text);

@@ -19,8 +19,11 @@ header_layout:
   - title
   - socials
 content_box_opacity: 100%
+content_padding: 3rem
 background_color: var(--base)
 round_avatar: False
+border_left: none
+border_right: none
 
 # theme colours
 colors:

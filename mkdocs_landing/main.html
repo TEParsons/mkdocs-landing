@@ -63,14 +63,17 @@
       }
     }
     /* style settings */
-    #background {
+    body#background {
       background-color: {{config.theme.background_color}};
       {% if config.theme.background|length %}
       background-image: url({{config.theme.background}});
       {% endif %}
     }
-    #content {
+    content#content {
+      padding: 0 {{ config.theme.content_padding }};
       background: color-mix(in srgb, var(--base) {{config.theme.content_box_opacity}}, transparent);
+      border-left: {{ config.theme.border_left }};
+      border-right: {{ config.theme.border_right }};
     }
     #avatar {
       {% if config.theme.round_avatar %}
