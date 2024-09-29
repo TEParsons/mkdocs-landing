@@ -22,10 +22,10 @@ theme:
       icon: at
     - label: GitHub
       link: https://github.com/TEParsons/mkdocs-landing
-      icon: github
+      icon: [brands, github]
     - label: Theme Gallery
       link: https://github.com/mkdocs/catalog?tab=readme-ov-file#-theming
-      icon: book
+      icon: bookmark
 
 hooks:
   - mkdocs_landing/hooks/md_filter.py

@@ -65,18 +65,11 @@
 <body id="background">
   <content id="content">
   <header id="header">
-    {% if config.theme.avatar|length %}
-    <img id="avatar" src="{{ config.theme.avatar | url }}" />
-    {% else %}
-    <div id="avatar"></div>
-    {% endif %}
-    <nav id="socials">
-      {% for social in config.theme.socials %}
-      <a href="{{ social.link }}"><i class="fa-brands fa-{{ social.icon }}" alt="{{ social.label }}"></i></a>
-      {% endfor %}
-    </nav>
-    <h1 id="title"><a href={{ "." | url }}>{{ config.site_name }}</a></h1>
-    {{ config.theme.tagline | markdown(id="tagline") }}
+    {% for header_emt in config.theme.header_layout %}
+    {% with emt=header_emt %}
+    {% include "partials/header_element.html" %}
+    {% endwith %}
+    {% endfor %}
   </header>
   <main id="page">
     <nav id="toc">

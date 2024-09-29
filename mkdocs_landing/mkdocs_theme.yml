@@ -13,6 +13,11 @@ footer: |
 socials:
 
 # style options
+header_layout:
+  - avatar
+  - tagline
+  - title
+  - socials
 content_box_opacity: 100%
 background_color: var(--base)
 round_avatar: False

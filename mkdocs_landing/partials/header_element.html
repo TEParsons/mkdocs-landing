@@ -1,0 +1,29 @@
+ {% if emt == "avatar" %}
+    {% if config.theme.avatar|length %}
+    <img id="avatar" src="{{ config.theme.avatar | url }}" />
+    {% else %}
+    <div id="avatar"></div>
+    {% endif %}
+{% elif emt == "socials" %}
+    <nav id="socials">
+        {% for social in config.theme.socials %}
+        {% if social.icon is string %}
+        {% set social_src = "regular" %}
+        {% set social_tag = social.icon %}
+        {% elif social.icon|length > 1 %}
+        {% set social_src = social.icon[0] %}
+        {% set social_tag = social.icon[1] %}
+        {% else %}
+        {% set social_src = "regular" %}
+        {% set social_tag = social.icon[0] %}
+        {% endif %}
+        <a href="{{ social.link }}"><i class="fa-{{ social_src }} fa-{{ social_tag }}" alt="{{ social.label }}"></i></a>
+        {% endfor %}
+    </nav>
+{% elif emt == "tagline" %}
+    {{ config.theme.tagline | markdown(id="tagline") }}
+{% elif emt == "title" %}
+    <h1 id="title"><a href={{ "." | url }}>{{ config.site_name }}</a></h1>
+{% else %}
+    <div></div>
+{% endif %}

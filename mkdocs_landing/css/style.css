@@ -74,7 +74,7 @@ article {
 #header {
     display: grid;
     align-items: end;
-    grid-template-columns: 8rem auto;
+    grid-template-columns: 8rem auto auto;
 }
 
 #title, #title a {
@@ -89,8 +89,10 @@ article {
     font-family: var(--heading);
     font-size: 1.5rem;
     color: var(--primary);
+    margin: 0;
 }
 #socials {
+    grid-column-end: span 2;
     display: grid;
     grid-template-columns: repeat(auto-fill, 1em);
     justify-content: left;
