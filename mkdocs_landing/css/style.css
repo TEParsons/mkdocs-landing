@@ -97,8 +97,6 @@ article {
 #avatar {
     object-fit: cover;
     margin: 0 1rem 0 0;
-    border-radius: 50%;
-    box-shadow: 0 0 2rem var(--shadow);
 }
 
 

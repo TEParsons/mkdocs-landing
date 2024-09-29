@@ -10,37 +10,45 @@
 
     :root {
       /* colors */
-      --primary: {{ config.theme.colors.primary }};
-      --secondary: {{ config.theme.colors.secondary }};
-      --tertiary: {{ config.theme.colors.tertiary }};
+      --primary: {{config.theme.colors.primary}};
+      --secondary: {{config.theme.colors.secondary}};
+      --tertiary: {{config.theme.colors.tertiary}};
       /* shades */
-      --base: {{ config.theme.colors.base }};
-      --mantle: {{ config.theme.colors.mantle }};
-      --crust: {{ config.theme.colors.crust }};
-      --overlay: {{ config.theme.colors.overlay }};
+      --base: {{config.theme.colors.base}};
+      --mantle: {{config.theme.colors.mantle}};
+      --crust: {{config.theme.colors.crust}};
+      --overlay: {{config.theme.colors.overlay}};
       /* text */
-      --text: {{ config.theme.colors.text }};
-      --hltext: {{ config.theme.colors.hltext }};
+      --text: {{config.theme.colors.text}};
+      --hltext: {{config.theme.colors.hltext}};
       color: var(--text);
       /* background-specific text */
-      --primary-text: {{ config.theme.colors.primary_text }};
-      --secondary-text: {{ config.theme.colors.secondary_text }};
-      --tertiary-text: {{ config.theme.colors.tertiary_text }};
-      --base-text: {{ config.theme.colors.base_text }};
-      --mantle-text: {{ config.theme.colors.mantle_text }};
-      --crust-text: {{ config.theme.colors.crust_text }};
-      --overlay-text: {{ config.theme.colors.overlay_text }};
+      --primary-text: {{config.theme.colors.primary_text}};
+      --secondary-text: {{config.theme.colors.secondary_text}};
+      --tertiary-text: {{config.theme.colors.tertiary_text}};
+      --base-text: {{config.theme.colors.base_text}};
+      --mantle-text: {{config.theme.colors.mantle_text}};
+      --crust-text: {{config.theme.colors.crust_text}};
+      --overlay-text: {{config.theme.colors.overlay_text}};
       /* fonts */
-      --heading: {{ config.theme.fonts.heading }};
-      --body: {{ config.theme.fonts.body }};
-      --mono: {{ config.theme.fonts.mono }};
+      --heading: {{config.theme.fonts.heading}};
+      --body: {{config.theme.fonts.body}};
+      --mono: {{config.theme.fonts.mono }};
       font-family: var(--body); 
     }
     #background {
+      background-color: {{config.theme.background_color}};
+      {% if config.theme.background|length %}
       background-image: url({{config.theme.background}});
+      {% endif %}
     }
     #content {
-      background: color-mix(in srgb, var(--base) "{{ config.theme.content_box_opacity }}", transparent);
+      background: color-mix(in srgb, var(--base) {{config.theme.content_box_opacity}}, transparent);
+    }
+    #avatar {
+      {% if config.theme.round_avatar %}
+      border-radius: 50%;
+      {% endif %}
     }
   </style>
   <link rel="icon" type="image/x-icon" href={{ config.theme.favicon }}>
@@ -57,10 +65,14 @@
 <body id="background">
   <content id="content">
   <header id="header">
+    {% if config.theme.avatar|length %}
     <img id="avatar" src="{{ config.theme.avatar | url }}" />
+    {% else %}
+    <div id="avatar"></div>
+    {% endif %}
     <nav id="socials">
       {% for social in config.theme.socials %}
-      <a href={{ social.link }}><i class="fa-brands fa-{{ social.icon }}" alt={{ social.label }}></i></a>
+      <a href="{{ social.link }}"><i class="fa-brands fa-{{ social.icon }}" alt="{{ social.label }}"></i></a>
       {% endfor %}
     </nav>
     <h1 id="title"><a href={{ "." | url }}>{{ config.site_name }}</a></h1>

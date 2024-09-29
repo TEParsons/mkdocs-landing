@@ -3,9 +3,9 @@ name: landing
 # customisation options
 
 # images
-favicon: assets/favicon.png
-avatar: assets/logo.png
-background: assets/background.png
+favicon: 
+avatar: 
+background: "\"\""
 # information
 tagline: 
 footer: |
@@ -13,7 +13,9 @@ footer: |
 socials:
 
 # style options
-content-box-opacity: 80%
+content_box_opacity: 100%
+background_color: var(--base)
+round_avatar: False
 
 # theme colours
 colors:

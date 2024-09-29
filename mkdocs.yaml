@@ -1,4 +1,4 @@
-site_name: Todd Parsons
+site_name: Landing
 
 docs_dir: docs_src
 draft_docs: vault
@@ -7,9 +7,8 @@ site_dir: docs
 theme:
   name: landing
 
-  favicon: assets/tp.png
-  avatar: assets/staff-picture.jpg
-  background: "\"\""
+  favicon: "branding/favicon.png"
+  avatar: "branding/logo.png"
   tagline: |
     he/him /[tɒd pɑsənz](http://ipa-reader.xyz/?text=tɒd%20pɑsənz)/
   footer: |
