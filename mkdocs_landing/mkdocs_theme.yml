@@ -47,9 +47,9 @@ colors:
 # dark mode variants
 colors_dark:
   # colours
-  primary: inherit
-  secondary: inherit
-  tertiary: inherit
+  primary: "#05b2dc"
+  secondary: "#ef9B0f"
+  tertiary: "#ef3e36"
   # shades
   base: "#343233"
   mantle: "#373536"
@@ -59,7 +59,7 @@ colors_dark:
   text: "#ffffff"
   hltext: "#343233"
   # background-specific text
-  primary_text: var(--hltext)
+  primary_text: var(--text)
   secondary_text: var(--text)
   tertiary_text: var(--text)
   base_text: var(--text)
