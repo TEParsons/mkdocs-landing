@@ -5,7 +5,7 @@ name: landing
 # images
 favicon: 
 avatar: 
-background: "\"\""
+background:
 # information
 tagline: 
 footer: |
