@@ -106,7 +106,6 @@ nav#socials {
 #avatar {
     object-fit: cover;
     margin: 0 1rem 0 0;
-    border-radius: 1rem;
     max-width: calc(100% - 1rem);
 }
 
