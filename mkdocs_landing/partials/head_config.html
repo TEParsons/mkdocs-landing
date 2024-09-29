@@ -1,0 +1,90 @@
+<head>
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family={{ config.theme.fonts.heading }}');
+      @import url('https://fonts.googleapis.com/css2?family={{ config.theme.fonts.body }}');
+      @import url('https://fonts.googleapis.com/css2?family={{ config.theme.fonts.mono }}');
+  
+      :root {
+        /* colors */
+        --primary: {{config.theme.colors.primary}};
+        --secondary: {{config.theme.colors.secondary}};
+        --tertiary: {{config.theme.colors.tertiary}};
+        /* shades */
+        --base: {{config.theme.colors.base}};
+        --mantle: {{config.theme.colors.mantle}};
+        --crust: {{config.theme.colors.crust}};
+        --overlay: {{config.theme.colors.overlay}};
+        /* text */
+        --text: {{config.theme.colors.text}};
+        --hltext: {{config.theme.colors.hltext}};
+        color: var(--text);
+        /* background-specific text */
+        --primary-text: {{config.theme.colors.primary_text}};
+        --secondary-text: {{config.theme.colors.secondary_text}};
+        --tertiary-text: {{config.theme.colors.tertiary_text}};
+        --base-text: {{config.theme.colors.base_text}};
+        --mantle-text: {{config.theme.colors.mantle_text}};
+        --crust-text: {{config.theme.colors.crust_text}};
+        --overlay-text: {{config.theme.colors.overlay_text}};
+        /* fonts */
+        --heading: {{config.theme.fonts.heading}};
+        --body: {{config.theme.fonts.body}};
+        --mono: {{config.theme.fonts.mono }};
+        font-family: var(--body); 
+      }
+      /* dark mode */
+      @media (prefers-color-scheme: dark) {
+        :root {
+          /* colors */
+          --primary: {{config.theme.colors_dark.primary}};
+          --secondary: {{config.theme.colors_dark.secondary}};
+          --tertiary: {{config.theme.colors_dark.tertiary}};
+          /* shades */
+          --base: {{config.theme.colors_dark.base}};
+          --mantle: {{config.theme.colors_dark.mantle}};
+          --crust: {{config.theme.colors_dark.crust}};
+          --overlay: {{config.theme.colors_dark.overlay}};
+          /* text */
+          --text: {{config.theme.colors_dark.text}};
+          --hltext: {{config.theme.colors_dark.hltext}};
+          color: var(--text);
+          /* background-specific text */
+          --primary-text: {{config.theme.colors_dark.primary_text}};
+          --secondary-text: {{config.theme.colors_dark.secondary_text}};
+          --tertiary-text: {{config.theme.colors_dark.tertiary_text}};
+          --base-text: {{config.theme.colors_dark.base_text}};
+          --mantle-text: {{config.theme.colors_dark.mantle_text}};
+          --crust-text: {{config.theme.colors_dark.crust_text}};
+          --overlay-text: {{config.theme.colors_dark.overlay_text}};
+        }
+      }
+      /* style settings */
+      body#background {
+        background-color: {{config.theme.background_color}};
+        {% if config.theme.background|length %}
+        background-image: url({{config.theme.background}});
+        {% endif %}
+      }
+      content#content {
+        padding: 0 {{ config.theme.content_padding }};
+        background: color-mix(in srgb, var(--base) {{config.theme.content_box_opacity}}, transparent);
+        border-left: {{ config.theme.border_left }};
+        border-right: {{ config.theme.border_right }};
+      }
+      #avatar {
+        {% if config.theme.round_avatar %}
+        border-radius: 50%;
+        {% endif %}
+      }
+    </style>
+    <link rel="icon" type="image/x-icon" href={{ config.theme.favicon }}>
+    <link href="{{ 'css/style.css' | url }}" rel="stylesheet">
+    <link href="{{ 'css/responsivity.css' | url }}" rel="stylesheet">
+    {%- for path in config.extra_css %}
+    <link href="{{ path | url }}" rel="stylesheet">
+    {%- endfor %}
+    <script src="https://kit.fontawesome.com/b57355f8ac.js" crossorigin="anonymous"></script>
+    <script id="altmetric-embed-js" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/altmetric_badges-e7ba41a192efc3e63f5d48f8a1916dec4b1b49c01075bc7b39481408957b3b28.js"></script>
+    <link id="altmetric-embed-css" rel="stylesheet" type="text/css" href="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed-59614f5c46b49b21eeef3bb28c4fb38d1e7069e8d014752fcb66e84942556802.css">
+  </head>

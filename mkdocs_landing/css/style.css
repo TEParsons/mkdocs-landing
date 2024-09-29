@@ -13,7 +13,9 @@ body {
 
 /** Layout **/
 
-header#header, #page {
+header#header, 
+header#article-header,
+#page {
     padding-top: 4rem;
     position: relative;
 }
@@ -71,15 +73,22 @@ article {
 
 /** Header **/
 
-#header {
+header#header {
     display: grid;
     align-items: end;
     grid-template-columns: 8rem auto auto;
 }
+header#header #title,
+header#header #title a {
+    font-size: 6rem;
+}
+header#article-header #title, 
+header#article-header #title a {
+    font-size: 3rem;
+}
 
 #title, #title a {
     grid-column-end: span 2;
-    font-size: 6rem;
     margin: 1rem 0;
     color: var(--text);
     line-height: 1em;
@@ -108,15 +117,18 @@ nav#socials {
 
 /** Table of contents **/
 
-#toc {
+nav#toc {
     position: absolute;
     right: calc(100% + 5rem);
     text-align: right;
 }
-#toc a {
+nav#toc a {
     display: block;
     white-space: nowrap;
     margin: 0.5rem 0;
+}
+nav#toc + * {
+    margin-top: 0;
 }
 
 
