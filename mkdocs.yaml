@@ -5,8 +5,7 @@ draft_docs: vault
 site_dir: docs
 
 theme:
-  name: mkdocs
-  custom_dir: mkdocs_landing/
+  name: landing
 
   favicon: assets/tp.png
   avatar: assets/staff-picture.jpg

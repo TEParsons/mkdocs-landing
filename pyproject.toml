@@ -1,0 +1,21 @@
+[project]
+name = "mkdocs-landing"
+version = "0.0.0"
+authors = [
+    {name = "Todd Parsons", email = "todd.e.parsons@gmail.com"}
+]
+description = "mkdocs theme geared towards making a personal landing page, with simpler navigation and heavily customisable style options."
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://TEParsons.github.io/mkdocs-landing"
+Download = "https://github.com/TEParsons/mkdocs-landing/releases"
+
+[tool.setuptools]
+packages = ["mkdocs_landing"]
+
+[tool.setuptools.package-data]
+mkdocs_landing = ["**/*.html", "**/*.css", "**/*.yml", "**/*.jpg", "**/*.png", "**/*.json", "**/*.ttf"]
+
+[project.entry-points."mkdocs.themes"]
+landing = "mkdocs_landing"
