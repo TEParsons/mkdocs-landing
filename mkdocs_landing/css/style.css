@@ -26,14 +26,14 @@ body {
     margin: 0 auto 0 auto;
 }
 
-#footer {
+footer#footer {
     position: relative;
     text-align: right;
     padding: 2rem calc(50% - 24rem);
     background-color: var(--primary);
     color: var(--primary-text)
 }
-#footer a:not(:hover) {
+footer#footer a:not(:hover) {
     color: var(--primary-text);
 }
 
@@ -91,7 +91,7 @@ article {
     color: var(--primary);
     margin: 0;
 }
-#socials {
+nav#socials {
     grid-column-end: span 2;
     display: grid;
     grid-template-columns: repeat(auto-fill, 1em);
