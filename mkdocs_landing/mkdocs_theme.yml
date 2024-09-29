@@ -3,9 +3,9 @@ name: landing
 # customisation options
 
 # images
-favicon: 
-avatar: 
-background:
+favicon: ""
+avatar: ""
+background: ""
 # information
 tagline: 
 footer: |
