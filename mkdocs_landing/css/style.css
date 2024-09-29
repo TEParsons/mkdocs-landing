@@ -102,6 +102,7 @@ article {
 #avatar {
     object-fit: cover;
     margin: 0 1rem 0 0;
+    border-radius: 1rem;
 }
 
 
