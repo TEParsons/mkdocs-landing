@@ -199,6 +199,7 @@ blockquote + ul {
 
 pre {
     padding: 1rem;
+    overflow-x: auto;
 }
 
 .altmetric-citation {
