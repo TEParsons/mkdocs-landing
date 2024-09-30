@@ -77,7 +77,7 @@ fonts:
   # headings
   heading: Poppins
   # body
-  body: Hind
+  body: Noto Sans
   # monospace
   mono: JetBrains Mono
 font-files:
