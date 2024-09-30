@@ -26,7 +26,3 @@ theme:
     - label: Theme Gallery
       link: https://github.com/mkdocs/catalog?tab=readme-ov-file#-theming
       icon: bookmark
-
-hooks:
-  - mkdocs_landing/hooks/md_filter.py
-  - mkdocs_landing/hooks/layout.py
