@@ -15,7 +15,7 @@
 @media (pointer:coarse) {
 
     /** Header **/
-    #socials {
+    nav#socials {
         font-size: 4rem;
     }
 
@@ -59,11 +59,14 @@
         padding: 4rem;
     }
 
-    pre {
+    pre,
+    #page-controls a {
         font-size: 2rem;
     }
 
     .altmetric-embed {
         display: none;
     }
+
+
 }
