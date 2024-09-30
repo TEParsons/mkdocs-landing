@@ -1,5 +1,12 @@
 import markdown
-from .base import jinja_filter
+from jinja2.filters import FILTERS
+
+
+def jinja_filter(tag):
+    def register_filter(fcn):
+        FILTERS[tag] = fcn
+    
+    return register_filter
 
 
 # if config event not run, use parser with default config
@@ -14,6 +21,7 @@ def on_config(config, **kwargs):
     global md
     # create markdown interpreter
     md = markdown.Markdown(extensions=config.markdown_extensions)
+
 
 # define conversion function
 @jinja_filter("markdown")
