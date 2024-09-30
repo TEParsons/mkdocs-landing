@@ -5,7 +5,6 @@ name: landing
 # images
 favicon: ""
 avatar: ""
-background: ""
 # information
 tagline: 
 footer: |
@@ -19,8 +18,10 @@ header_layout:
   - title
   - socials
 content_box_opacity: 100%
-content_padding: 3rem
-background_color: var(--base)
+content_box_padding: 3rem
+background: "fixed center/cover var(--base)"
+background_image: ""
+background_color: ""
 avatar_size: 8rem
 round_avatar: False
 border_left: none

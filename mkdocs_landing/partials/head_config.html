@@ -64,9 +64,12 @@
         grid-template-columns: {{ config.theme.avatar_size }} auto {{ config.theme.avatar_size }};
       }
       body#background {
+        background: {{config.theme.background}};
+        {% if config.theme.background_color|length %}
         background-color: {{config.theme.background_color}};
-        {% if config.theme.background|length %}
-        background-image: url({{config.theme.background}});
+        {% endif %}
+        {% if config.theme.background_image|length %}
+        background-image: url({{config.theme.background_image}});
         {% endif %}
       }
       content#content {

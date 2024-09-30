@@ -5,9 +5,6 @@ html {
 body {
     position: relative;
     margin: 0;
-    background-color: var(--base);
-    background-attachment: fixed;
-    background-repeat: repeat;
 }
 
 
@@ -47,6 +44,7 @@ article {
     margin-bottom: 2rem;
     margin-top: 1rem;
     margin-left: -1rem;
+    background-color: var(--base)
 }
 
 #page-controls {

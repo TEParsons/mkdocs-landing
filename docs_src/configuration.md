@@ -10,9 +10,6 @@ Image in the browser tab, should be a path to an image file, ideally a 16x16px .
 ### `avatar`
 Image of yourself, this will appear in the heading of the main page.
 
-### `background`
-Background image, this will be tiled across the whole page, behind the content box.
-
 ### `footer`
 Markdown content to include in the page footer
 
@@ -36,20 +33,26 @@ This defines the order in which elements in the header are laid out. Elements av
 
 You can also include a blank element to put an empty div tag to fill a slot
 
+### `background`
+Background for the whole page, this will be behind the content box. Syntax is the same as the CSS `background` property.
+
+### `background_color`
+Color override for `background`. Whatever value is in here will be used for the CSS `background-color` property (which overrides any color set in `background`)
+
+### `background_image`
+Image override for `background`. Whatever value is in here will be used for the CSS `background-image` property (which overrides any color set in `background`). Unlike `background`, you do not need to include the `url(...)` wrapper - just a file path will suffice.
+
 ### `content_box_opacity`
 The box containing your site content will be your base color, this parameter controls how opaque it is over the background.
 
-### `background_color`
-The colour of the background. This will display underneath the background image, if there is one.
+### `content_box_padding`
+The distance between the horizontal edges of your content and the edges of the content box.
 
 ### `avatar_size`
 The width of the avatar, default is 8rem.
 
 ### `round_avatar`
 If True, then the avatar will be cropped into a circle.
-
-### `content_padding`
-The distance between the horizontal edges of your content and the edges of the content box.
 
 ### `border_left` / `border_right`
 The border on either side of the content box (defined using the same syntax as in `border-left`/`border-right` in CSS)
