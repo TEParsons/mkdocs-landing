@@ -15,5 +15,5 @@ Below are some implementations of Landing with various styles, as an example.
 ## Catppuccin
 Catppuccin is a community-driven pastel theme that aims to be the middle ground between low and high contrast themes. It consists of 4 soothing warm flavors with 26 eye-candy colors each, perfect for coding, designing, and much more!
 
-<iframe src=https://teparsons.github.io/mkdocs-landing/gallery/catppuccin></iframe>
+<iframe src=https://teparsons.github.io/mkdocs-landing/gallery/catppuccin class=zoomed-out></iframe>
 [<i class="fa-regular fa-file-code"></i>   mkdocs.yaml file](https://github.com/TEParsons/mkdocs-landing/blob/main/gallery/catppuccin/mkdocs.yaml)
