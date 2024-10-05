@@ -29,7 +29,8 @@ footer#footer {
     position: relative;
     text-align: right;
     padding: 2rem calc(50% - 24rem);
-    background-color: var(--mantle);
+    background-color: var(--text);
+    color: var(--hltext);
 }
 
 #page-source {
