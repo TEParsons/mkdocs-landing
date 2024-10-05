@@ -108,6 +108,9 @@ nav#socials {
     grid-gap: .5em;
     font-size: 2rem;
 }
+nav#socials i {
+    margin: inherit;
+}
 #avatar {
     object-fit: cover;
     margin: 0 1rem 0 0;
@@ -173,6 +176,10 @@ a {
 }
 a:hover {
     color: var(--tertiary);
+}
+
+i {
+    margin: auto 0.2em;
 }
 
 pre, code, blockquote {
