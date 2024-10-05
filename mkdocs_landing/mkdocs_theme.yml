@@ -8,7 +8,7 @@ avatar: ""
 # information
 tagline: 
 footer: |
-    Compiled from markdown using [MkDocs](https://www.mkdocs.org/). Theme by [Todd Parsons](https://toddparsons.co.uk).
+    Compiled from markdown using [MkDocs](https://www.mkdocs.org/). Theme is [Landing](https://github.com/TEParsons/mkdocs-landing) by [Todd Parsons](https://toddparsons.co.uk).
 socials:
 
 # style options
