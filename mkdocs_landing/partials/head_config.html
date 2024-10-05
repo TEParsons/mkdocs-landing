@@ -72,6 +72,12 @@
         background-image: url({{config.theme.background_image}});
         {% endif %}
       }
+      #background-gradient {
+        background: linear-gradient(
+          {{ config.theme.background_gradient_angle }}deg, 
+          {{ config.theme.background_gradient_colors|join(", ") }}
+        );
+      }
       content#content {
         padding: 0 {{ config.theme.content_box_padding }};
         background: color-mix(in srgb, var(--base) {{config.theme.content_box_opacity}}, transparent);

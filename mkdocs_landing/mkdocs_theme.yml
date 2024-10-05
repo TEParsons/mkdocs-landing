@@ -17,11 +17,16 @@ header_layout:
   - tagline
   - title
   - socials
-content_box_opacity: 100%
+content_box_opacity: 0%
 content_box_padding: 3rem
 background: "fixed center/cover var(--base)"
 background_image: ""
 background_color: ""
+background_gradient_angle: 45
+background_gradient_colors:
+  - var(--mantle)
+  - var(--base)
+  - var(--mantle)
 avatar_size: 8rem
 round_avatar: False
 border_left: none
