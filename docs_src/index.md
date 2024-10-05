@@ -7,3 +7,12 @@ Click [here](configuration.md) for a full list of configuration options availabl
 
 # History
 Landing came out of me wanting to use mkdocs for [my own personal landing page](https://toddparsons.co.uk) - I made a custom .css file to sit alongside a generic mkdocs file and style it the way I wanted it. When implementing a [similar page for a friend](https://benjaminambrose.github.io/benambrose/) I realised that this basic structure could be fairly easily modified with a few key parameters to match a variety of different aesthetics.
+
+# Gallery
+
+Below are some implementations of Landing with various styles, as an example.
+
+## Catppuccin
+Catppuccin is a community-driven pastel theme that aims to be the middle ground between low and high contrast themes. It consists of 4 soothing warm flavors with 26 eye-candy colors each, perfect for coding, designing, and much more!
+
+[mkdocs.yaml file](https://github.com/TEParsons/mkdocs-landing/blob/main/gallery/catppuccin/mkdocs.yaml) | [Page](gallery/catppuccin)
