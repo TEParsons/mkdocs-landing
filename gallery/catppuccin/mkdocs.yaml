@@ -91,3 +91,8 @@ theme:
     crust_text: var(--text)
     overlay_text: var(--hltext)
     footer_text: var(--text)
+  
+  fonts:
+    heading: Noto Sans
+    body: Noto Sans
+    mono: Roboto Mono
