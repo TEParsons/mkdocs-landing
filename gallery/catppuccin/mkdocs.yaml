@@ -1,0 +1,93 @@
+site_name: Catppuccin
+
+docs_dir: src
+draft_docs: vault
+site_dir: ../../docs/gallery/catppuccin_mocha
+
+theme:
+  name: landing
+
+  favicon: "https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png"
+  avatar: "https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png"
+  tagline: |
+    /[kætpʊtʃin](http://ipa-reader.xyz/?text=kætpʊtʃin)/
+  page_source: 
+    link: https://github.com/TEParsons/mkdocs-landing
+    icon: github
+  socials:
+    - label: GitHub
+      link: https://github.com/catppuccin/catppuccin
+      icon: [brands, github]
+    - label: NPM
+      link: https://github.com/catppuccin/catppuccin/raw/main/assets/social/latte_npm.svg
+      icon: [brands, npm]
+    - label: Discord
+      link: https://discord.com/servers/907385605422448742
+      icon: [brands, discord]
+    - label: Mastodon
+      link: https://fosstodon.org/@catppuccin
+      icon: [brands, mastodon]
+    - label: Reddit
+      link: https://reddit.com/r/catppuccin
+      icon: [brands, reddit]
+
+  # style options
+  header_layout:
+    - avatar
+    - socials
+    - title
+    - tagline
+  background_gradient_colors: 
+    - color-mix(in srgb, var(--crust) 100%, transparent)
+    - transparent
+    - color-mix(in srgb, var(--base) 80%, transparent)
+  round_avatar: True
+
+  # theme colours
+  colors:
+    # colours
+    primary: "#7287fd"
+    secondary: "#dc8a78"
+    tertiary: "#179299"
+    # shades
+    base: "#eff1f5"
+    mantle: "#e6e9ef"
+    crust: "#dce0e8"
+    overlay: "#9ca0b0"
+    footer: var(--text)
+    # text
+    text: "#4c4f69"
+    hltext: var(--base)
+    # background-specific text
+    primary_text: var(--hltext)
+    secondary_text: var(--hltext)
+    tertiary_text: var(--hltext)
+    base_text: var(--text)
+    mantle_text: var(--text)
+    crust_text: var(--text)
+    overlay_text: var(--hltext)
+    footer_text: var(--hltext)
+  # dark mode variants
+  colors_dark:
+    # colours
+    primary: "#b4befe"
+    secondary: "#f5e0dc"
+    tertiary: "#94e2d5"
+    # shades
+    base: "#1e1e2e"
+    mantle: "#181825"
+    crust: "#11111b"
+    overlay: "#6c7086"
+    footer: "#01010b"
+    # text
+    text: "#cdd6f4"
+    hltext: var(--base)
+    # background-specific text
+    primary_text: var(--text)
+    secondary_text: var(--text)
+    tertiary_text: var(--text)
+    base_text: var(--text)
+    mantle_text: var(--text)
+    crust_text: var(--text)
+    overlay_text: var(--hltext)
+    footer_text: var(--text)

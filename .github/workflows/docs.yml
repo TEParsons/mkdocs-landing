@@ -27,6 +27,8 @@ jobs:
     - name: Build docs
       run: |
         mkdocs build
+        cd gallery/catppuccin
+        mkdocs build
 
     - name: Commit
       run: |
