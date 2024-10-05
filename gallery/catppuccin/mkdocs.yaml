@@ -2,7 +2,7 @@ site_name: Catppuccin
 
 docs_dir: src
 draft_docs: vault
-site_dir: ../../docs/gallery/catppuccin_mocha
+site_dir: ../../docs/gallery/catppuccin
 
 theme:
   name: landing
