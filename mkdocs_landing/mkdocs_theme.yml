@@ -24,9 +24,9 @@ background_image: ""
 background_color: ""
 background_gradient_angle: 45
 background_gradient_colors:
-  - var(--mantle)
-  - var(--base)
-  - var(--mantle)
+  - color-mix(in srgb, var(--mantle) 80%, transparent)
+  - transparent
+  - color-mix(in srgb, var(--mantle) 60%, transparent)
 avatar_size: 8rem
 round_avatar: False
 border_left: none
