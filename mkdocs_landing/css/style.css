@@ -29,7 +29,7 @@ content#content {
 footer#footer {
     position: relative;
     text-align: right;
-    padding: 2rem calc(50% - 24rem);
+    padding: 2rem max(calc(50% - 24rem), 2rem);
     background-color: var(--footer);
     color: var(--footer-text);
 }
@@ -214,6 +214,15 @@ blockquote + ul {
 pre {
     padding: 1rem;
     overflow-x: auto;
+}
+
+
+iframe {
+    width: calc(100% + 2rem);
+    height: 30rem;
+    margin: 1rem -1rem;
+    border: 2px solid var(--overlay);
+    border-radius: 1rem;
 }
 
 .altmetric-citation {
