@@ -23,6 +23,7 @@ content#content {
     padding-bottom: 4rem;
     max-width: 46rem;
     margin: 0 auto 0 auto;
+    min-height: 100vh;
 }
 
 footer#footer {
