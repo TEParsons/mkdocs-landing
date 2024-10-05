@@ -43,6 +43,7 @@ colors:
   mantle: "#f5f4f5"
   crust: "#d4d2d5"
   overlay: "#9B9B9E"
+  footer: var(--text)
   # text
   text: "#343233"
   hltext: "#ffffff"
@@ -54,6 +55,7 @@ colors:
   mantle_text: var(--text)
   crust_text: var(--text)
   overlay_text: var(--hltext)
+  footer_text: var(--hltext)
 # dark mode variants
 colors_dark:
   # colours
@@ -65,6 +67,7 @@ colors_dark:
   mantle: "#373536"
   crust: "#3E3C3D"
   overlay: "#646461"
+  footer: "#242223"
   # text
   text: "#ffffff"
   hltext: "#343233"
@@ -76,6 +79,7 @@ colors_dark:
   mantle_text: var(--text)
   crust_text: var(--text)
   overlay_text: var(--hltext)
+  footer_text: var(--text)
 
 # theme fonts
 fonts:
