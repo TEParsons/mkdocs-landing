@@ -32,11 +32,6 @@ theme:
       icon: [brands, reddit]
 
   # style options
-  header_layout:
-    - avatar
-    - socials
-    - title
-    - tagline
   background_gradient_colors: 
     - color-mix(in srgb, var(--crust) 100%, transparent)
     - transparent
