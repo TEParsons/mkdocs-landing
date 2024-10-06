@@ -1,6 +1,13 @@
 <head>
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
     <style>
+      /* load emoji font */
+      {% if config.theme.emoji_font_files.regular %}@font-face {
+        font-family: "{{ config.theme.emoji_font }}";
+        src: url('{{ config.theme.emoji_font_files.regular | url }}');
+        font-weight: 400;
+      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.emoji_font }}:wght@400');{% endif %}
+
       /* load heading font */
       {% if config.theme.heading_font_files.regular %}@font-face {
         font-family: "{{ config.theme.heading_font }}";
@@ -101,7 +108,7 @@
         --heading: {{config.theme.heading_font}};
         --body: {{config.theme.body_font}};
         --mono: {{config.theme.mono_font}};
-        font-family: var(--body); 
+        font-family: var(--body), {{config.theme.emoji_font}}; 
       }
       /* dark mode */
       @media (prefers-color-scheme: dark) {

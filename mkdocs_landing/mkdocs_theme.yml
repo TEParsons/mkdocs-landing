@@ -99,3 +99,7 @@ mono_font_files:
   bold:
   italic:
   bold_italic:
+# emoji font
+emoji_font: Noto Color Emoji
+emoji_font_files:
+  regular: assets/fonts/emoji/NotoColorEmoji-Regular.ttf

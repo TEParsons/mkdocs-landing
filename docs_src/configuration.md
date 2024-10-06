@@ -133,3 +133,23 @@ Font to use for most text, default is Hind
 
 ### `mono_font`
 Monospace font to use for code, default is JetBrains Mono
+
+### `emoji_font`
+Font to use for emojis, default is Noto Color Emoji, which is packaged with Landing (i.e. no Google Fonts loading needed) and looks like this: 
+
+🥰💀✌️🌴🐢🐐🍄⚽🍻👑📸😬👀🚨🏡🕊️🏆😻🌟🧿🍀🎨🍜
+
+## Local fonts
+To use fonts from a local file rather than Google Fonts (which you may want to do for loading speed or GDPR in the EU), you can point to the file using the relevant parameter name with `_files` on the end (e.g. `body_font_files` for `body_font`). This parameter should be a set of subparameters for each font style you want to specify a file for (`regular`, `bold`, `italic` and `bold_italic`), using the path to the font file you want to use, relative to your site root. For example:
+
+```yaml
+body_font: Noto Sans
+body_font_files:
+  regular: assets/fonts/NotoSans_Regular.tff
+  bold: assets/fonts/NotoSans_Bold.tff
+  italic: assets/fonts/NotoSans_Italictff
+  bold_italic: assets/fonts/NotoSans_BoldItalic.tff
+```
+
+### A note about emojis...
+`emoji_font_files` only uses `regular` as emojis only come in one weight and style.
