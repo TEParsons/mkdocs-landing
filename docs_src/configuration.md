@@ -87,18 +87,12 @@ Slighter darker than the mantle color, used for second-level highlights
 ### `overlay_color`
 Significantly darker than the crust color, used for subtle outlines which need to stand out
 
-### `footer_color`
-Specific shade to use for the footer
-
 ## Text colors
 ### `text_color`
 Basic text color
 
 ### `hltext_color`
 Basic text color for display against dark backgrounds
-
-### `footer_text_color`
-Specific text color used for the footer
 
 ## Background-specific text colors
 Each of the colors above has a matching parameter which is its name with `_color` replaced by `_text_color` (e.g. `primary_text_color` rather than `primary_color`), which defines the color for text when against that background color. These default to being either `text_color` or `hltext_color`, with the following defaults:
