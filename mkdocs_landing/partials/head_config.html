@@ -1,9 +1,77 @@
 <head>
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family={{ config.theme.heading_font }}');
-      @import url('https://fonts.googleapis.com/css2?family={{ config.theme.body_font }}');
-      @import url('https://fonts.googleapis.com/css2?family={{ config.theme.mono_font }}');
+      /* load heading font */
+      {% if config.theme.heading_font_files.regular %}@font-face {
+        font-family: "{{ config.theme.heading_font }}";
+        src: url('{{ config.theme.heading_font_files.regular }}');
+        font-weight: 400;
+      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.heading_font }}:wght@400');{% endif %}
+      {% if config.theme.heading_font_files.italic %}@font-face {
+        font-family: "{{ config.theme.heading_font }}";
+        src: url('{{ config.theme.heading_font_files.italic }}');
+        font-style: italic;
+        font-weight: 400;
+      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.heading_font }}:ital,wght@400');{% endif %}
+      {% if config.theme.heading_font_files.bold %}@font-face {
+        font-family: "{{ config.theme.heading_font }}";
+        src: url('{{ config.theme.heading_font_files.bold }}');
+        font-weight: 700;
+      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.heading_font }}:wght@700');{% endif %}
+      {% if config.theme.heading_font_files.bold_italic %}@font-face {
+        font-family: "{{ config.theme.heading_font }}";
+        src: url('{{ config.theme.heading_font_files.bold_italic }}');
+        font-style: italic;
+        font-weight: 700;
+      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.heading_font }}:ital,wght@700');{% endif %}
+
+      /* load body font */
+      {% if config.theme.body_font_files.regular %}@font-face {
+        font-family: "{{ config.theme.body_font }}";
+        src: url('{{ config.theme.body_font_files.regular }}');
+        font-weight: 400;
+      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.body_font }}:wght@400');{% endif %}
+      {% if config.theme.body_font_files.italic %}@font-face {
+        font-family: "{{ config.theme.body_font }}";
+        src: url('{{ config.theme.body_font_files.italic }}');
+        font-style: italic;
+        font-weight: 400;
+      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.body_font }}:ital,wght@400');{% endif %}
+      {% if config.theme.body_font_files.bold %}@font-face {
+        font-family: "{{ config.theme.body_font }}";
+        src: url('{{ config.theme.body_font_files.bold }}');
+        font-weight: 700;
+      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.body_font }}:wght@700');{% endif %}
+      {% if config.theme.body_font_files.bold_italic %}@font-face {
+        font-family: "{{ config.theme.body_font }}";
+        src: url('{{ config.theme.body_font_files.bold_italic }}');
+        font-style: italic;
+        font-weight: 700;
+      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.body_font }}:ital,wght@700');{% endif %}
+
+      /* load mono font */
+      {% if config.theme.mono_font_files.regular %}@font-face {
+        font-family: "{{ config.theme.mono_font }}";
+        src: url('{{ config.theme.mono_font_files.regular }}');
+        font-weight: 400;
+      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.mono_font }}:wght@400');{% endif %}
+      {% if config.theme.mono_font_files.italic %}@font-face {
+        font-family: "{{ config.theme.mono_font }}";
+        src: url('{{ config.theme.mono_font_files.italic }}');
+        font-style: italic;
+        font-weight: 400;
+      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.mono_font }}:ital,wght@400');{% endif %}
+      {% if config.theme.mono_font_files.bold %}@font-face {
+        font-family: "{{ config.theme.mono_font }}";
+        src: url('{{ config.theme.mono_font_files.bold }}');
+        font-weight: 700;
+      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.mono_font }}:wght@700');{% endif %}
+      {% if config.theme.mono_font_files.bold_italic %}@font-face {
+        font-family: "{{ config.theme.mono_font }}";
+        src: url('{{ config.theme.mono_font_files.bold_italic }}');
+        font-style: italic;
+        font-weight: 700;
+      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.mono_font }}:ital,wght@700');{% endif %}
   
       :root {
         /* colors */
