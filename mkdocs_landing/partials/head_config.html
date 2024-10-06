@@ -163,6 +163,12 @@
         border-radius: 1rem;
         {% endif %}
       }
+      footer#footer a {
+        color: {{config.theme.secondary_color_dark}};
+      }
+      footer#footer a:hover {
+        color: {{config.theme.tertiary_color_dark}};
+      }
     </style>
     <link rel="icon" type="image/x-icon" href={{ config.theme.favicon }}>
     <link href="{{ 'css/style.css' | url }}" rel="stylesheet">
