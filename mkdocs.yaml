@@ -26,3 +26,25 @@ theme:
     - label: Theme Gallery
       link: https://github.com/mkdocs/catalog?tab=readme-ov-file#-theming
       icon: bookmark
+
+  # heading font
+  heading_font: Poppins
+  heading_font_files:
+    regular: "assets/fonts/poppins/Poppins-Regular.ttf"
+    bold: "assets/fonts/poppins/Poppins-Bold.ttf"
+    italic: "assets/fonts/poppins/Poppins-Italic.ttf"
+    bold_italic: "assets/fonts/poppins/Poppins-BoldItalic.ttf"
+  # body font
+  body_font: Noto Sans
+  body_font_files:
+    regular: "assets/fonts/noto_sans/NotoSans-Regular.ttf"
+    bold: "assets/fonts/noto_sans/NotoSans-Bold.ttf"
+    italic: "assets/fonts/noto_sans/NotoSans-Italic.ttf"
+    bold_italic: "assets/fonts/noto_sans/NotoSans-BoldItalic.ttf"
+  # monospace font
+  mono_font: JetBrains Mono
+  mono_font_files:
+    regular: "assets/fonts/jetbrains_mono/JetBrainsMono-Regular.ttf"
+    bold: "assets/fonts/jetbrains_mono/JetBrainsMono-Bold.ttf"
+    italic: "assets/fonts/jetbrains_mono/JetBrainsMono-Italic.ttf"
+    bold_italic: "assets/fonts/jetbrains_mono/JetBrainsMono-BoldItalic.ttf"
