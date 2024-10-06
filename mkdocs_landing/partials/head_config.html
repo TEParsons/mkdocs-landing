@@ -105,10 +105,10 @@
         --overlay-text: {{config.theme.overlay_text_color}};
         --footer-text: var(--hltext);
         /* fonts */
-        --heading: {{config.theme.heading_font}};
-        --body: {{config.theme.body_font}};
-        --mono: {{config.theme.mono_font}};
-        font-family: var(--body), {{config.theme.emoji_font}}; 
+        --heading: {{config.theme.heading_font}}, {{config.theme.emoji_font}};
+        --body: {{config.theme.body_font}}, {{config.theme.emoji_font}};
+        --mono: {{config.theme.mono_font}}, {{config.theme.emoji_font}};
+        font-family: var(--body); 
       }
       /* dark mode */
       @media (prefers-color-scheme: dark) {
