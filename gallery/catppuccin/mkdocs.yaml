@@ -37,7 +37,7 @@ theme:
     - transparent
     - color-mix(in srgb, var(--base) 80%, transparent)
   round_avatar: True
-  
+
   # colours
   primary_color: "#7287fd"
   secondary_color: "#dc8a78"
@@ -47,7 +47,6 @@ theme:
   mantle_color: "#e6e9ef"
   crust_color: "#dce0e8"
   overlay_color: "#9ca0b0"
-  footer_color: var(--text)
   # text
   text_color: "#4c4f69"
   hltext_color: var(--base)
@@ -59,7 +58,6 @@ theme:
   mantle_text_color: var(--text)
   crust_text_color: var(--text)
   overlay_text_color: var(--hltext)
-  footer_text_color: var(--hltext)
 
   # colours (dark)
   primary_color_dark: "#b4befe"
@@ -70,7 +68,6 @@ theme:
   mantle_color_dark: "#181825"
   crust_color_dark: "#11111b"
   overlay_color_dark: "#6c7086"
-  footer_color_dark: "#01010b"
   # text (dark)
   text_color_dark: "#cdd6f4"
   hltext_color_dark: var(--base)
@@ -82,7 +79,6 @@ theme:
   mantle_text_color_dark: var(--text)
   crust_text_color_dark: var(--text)
   overlay_text_color_dark: var(--hltext)
-  footer_text_color_dark: var(--text)
   
   # fonts
   heading_font: Noto Sans
