@@ -1,0 +1,29 @@
+{# footer content from config file (parsed markdown) #}
+{% if config.theme.footer %}
+{{ config.theme.footer | markdown }}
+{% endif %}
+{# page source #}
+{% if 'icon' in config.theme.page_source %}
+{% set src_icon = config.theme.page_source.icon %}
+{% else %}
+{% set src_icon = ['brands', 'github'] %}
+{% endif %}
+
+{% if src_icon is string %}
+{% set src_grp = "regular" %}
+{% set src_tag = src_icon %}
+{% elif src_icon|length > 1 %}
+{% set src_grp = src_icon[0] %}
+{% set src_tag = src_icon[1] %}
+{% else %}
+{% set src_grp = "regular" %}
+{% set src_tag = src_icon[0] %}
+{% endif %}
+
+{% if config.theme.page_source.link %}
+<a id=page-source href={{ config.theme.page_source.link }}><i class="fa-{{ src_grp }} fa-{{ src_tag }}"></i> Page source</a>
+{% endif %}
+
+{% for script in config.extra_javascript %}
+{{ script | script_tag }}
+{% endfor %}

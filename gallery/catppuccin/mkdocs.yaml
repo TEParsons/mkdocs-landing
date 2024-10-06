@@ -13,7 +13,6 @@ theme:
     /[kætpʊtʃin](http://ipa-reader.xyz/?text=kætpʊtʃin)/
   page_source: 
     link: https://github.com/TEParsons/mkdocs-landing
-    icon: github
   socials:
     - label: GitHub
       link: https://github.com/catppuccin/catppuccin

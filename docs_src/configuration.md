@@ -13,6 +13,20 @@ Image of yourself, this will appear in the heading of the main page.
 ### `footer`
 Markdown content to include in the page footer
 
+### `page_source`
+Optionally add a link to this page's source code, for example on GitHub. Can be specified as either:
+```
+page_source:
+  link: <link to your page source>
+```
+or
+```
+page_source:
+  link: <link to your page source>
+  icon: [<fontawesome icon group>, <fontawesome icon tag>]
+```
+If specified without `icon`, the icon will default to the GitHub logo (equivalent to `icon: [brands, github]`)
+
 ### `socials`
 List of social links to include, should be in the format:
 ```

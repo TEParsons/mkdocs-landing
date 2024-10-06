@@ -27,17 +27,7 @@
   </main>
   </content>
   <footer id="footer">
-    {% if config.theme.footer %}
-    {{ config.theme.footer | markdown }}
-    {% endif %}
-
-    {% if config.theme.page_source %}
-    <a id=page-source href={{ config.theme.page_source.link }}><i class="fa-brands fa-{{ config.theme.page_source.icon }}"></i> Page source</a>
-    {% endif %}
-
-    {% for script in config.extra_javascript %}
-    {{ script | script_tag }}
-    {% endfor %}
+    {% include "partials/footer.html" %}
   </footer>
 </body>
 
