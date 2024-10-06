@@ -125,6 +125,9 @@ nav#toc {
     right: calc(100% + 5rem);
     text-align: right;
 }
+nav#toc ul {
+    list-style-type: none;
+}
 nav#toc a {
     display: block;
     white-space: nowrap;
@@ -132,6 +135,17 @@ nav#toc a {
 }
 nav#toc + * {
     margin-top: 0;
+}
+
+nav#toc .toc-subitem a {
+    color: var(--text);
+    opacity: 35%;
+}
+nav#toc .toc-subitem {
+    display: none;
+}
+nav#toc .toc-item:hover .toc-subitem {
+    display: inline;
 }
 
 

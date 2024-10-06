@@ -34,6 +34,7 @@ avatar_size: 8rem
 round_avatar: False
 border_left: none
 border_right: none
+toc_level: 2
 
 
 # colours

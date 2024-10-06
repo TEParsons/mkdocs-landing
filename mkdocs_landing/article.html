@@ -14,9 +14,7 @@
   </header>
   <main id="page">
     <nav id="toc">
-      {% for toc_item in page.toc %}
-      <a href="{{ toc_item.url }}">{{ toc_item.title }}</a>
-      {% endfor %}
+      {% include "partials/toc.html" %}
     </nav>
     {{ page.content }}
     <nav id="page-controls">
