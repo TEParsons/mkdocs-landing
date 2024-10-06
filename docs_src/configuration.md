@@ -58,64 +58,70 @@ If True, then the avatar will be cropped into a circle.
 The border on either side of the content box (defined using the same syntax as in `border-left`/`border-right` in CSS)
 
 # Colors
-The theme has an attribute `colors`, which has the following sub-attributes.
+The following attributes affect the colors used in your site.
 
 ## Scheme colors
 These are the colors which define your theme, ordered by importance.
 
-### `primary`
+### `primary_color`
 The first scheme color, this will be used for the footer and the tagline.
 
-### `secondary`
+### `secondary_color`
 The second scheme color, this will be used for links.
 
-### `tertiary`
+### `tertiary_color`
 The third scheme color, this will be used for links when hovered.
 
 ## Shades
 Various shades of white to use for backgrounds
 
-### `base`
+### `base_color`
 The base color, the background of the content box.
 
-### `mantle`
+### `mantle_color`
 Slightly darker than the base color, used for subtle highlights
 
-### `crust`
+### `crust_color`
 Slighter darker than the mantle color, used for second-level highlights
 
-### `overlay`
+### `overlay_color`
 Significantly darker than the crust color, used for subtle outlines which need to stand out
 
+### `footer_color`
+Specific shade to use for the footer
+
 ## Text colors
-### `text`
+### `text_color`
 Basic text color
 
-### `hltext`
+### `hltext_color`
 Basic text color for display against dark backgrounds
 
-## Background-specific text colors
-Each of the colors above has a matching parameter which is its name followed by `_text` (e.g. `primary_text` rather than `primary`), which defines the color for text when against that background color. These default to being either `text` or `hltext`, with the following defaults:
+### `footer_text_color`
+Specific text color used for the footer
 
-- primary_text: hltext
-- secondary_text: hltext
-- tertiary_text: hltext
-- base_text: text
-- mantle_text: text
-- crust_text: text
-- overlay_text: hltext
+## Background-specific text colors
+Each of the colors above has a matching parameter which is its name with `_color` replaced by `_text_color` (e.g. `primary_text_color` rather than `primary_color`), which defines the color for text when against that background color. These default to being either `text_color` or `hltext_color`, with the following defaults:
+
+- primary_text_color: hltext
+- secondary_text_color: hltext
+- tertiary_text_color: hltext
+- base_text_color: text
+- mantle_text_color: text
+- crust_text_color: text
+- overlay_text_color: hltext
 
 ## Darkmode colors
-To define the colors which are used in darkmode, use `colors_dark` in place of `colors`. Other names are all the same.
+To define the colors which are used in darkmode, use the same parameter names but with `_dark` on the end (e.g. `primary_color_dark` rather than `primary_color`)
 
 # Fonts
-The theme has an attribtue `fonts`, which has the following sub-attributes. Each of these can be the name of any font from [Google Fonts](https://fonts.google.com)
+The following attributes define the font faces used in your site. Each of these can be the name of any font from [Google Fonts](https://fonts.google.com)
 
-### `heading`
+### `heading_font`
 Font to use for headings, default is Poppins
 
-### `body`
+### `body_font`
 Font to use for most text, default is Hind
 
-### `mono`
+### `mono_font`
 Monospace font to use for code, default is JetBrains Mono

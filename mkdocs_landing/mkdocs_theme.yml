@@ -32,76 +32,71 @@ round_avatar: False
 border_left: none
 border_right: none
 
-# theme colours
-colors:
-  # colours
-  primary: "#05b2dc"
-  secondary: "#ef9B0f"
-  tertiary: "#ef3e36"
-  # shades
-  base: "#ffffff"
-  mantle: "#f5f4f5"
-  crust: "#d4d2d5"
-  overlay: "#9B9B9E"
-  footer: var(--text)
-  # text
-  text: "#343233"
-  hltext: "#ffffff"
-  # background-specific text
-  primary_text: var(--hltext)
-  secondary_text: var(--hltext)
-  tertiary_text: var(--hltext)
-  base_text: var(--text)
-  mantle_text: var(--text)
-  crust_text: var(--text)
-  overlay_text: var(--hltext)
-  footer_text: var(--hltext)
-# dark mode variants
-colors_dark:
-  # colours
-  primary: "#05b2dc"
-  secondary: "#ef9B0f"
-  tertiary: "#ef3e36"
-  # shades
-  base: "#343233"
-  mantle: "#373536"
-  crust: "#3E3C3D"
-  overlay: "#646461"
-  footer: "#242223"
-  # text
-  text: "#ffffff"
-  hltext: "#343233"
-  # background-specific text
-  primary_text: var(--text)
-  secondary_text: var(--text)
-  tertiary_text: var(--text)
-  base_text: var(--text)
-  mantle_text: var(--text)
-  crust_text: var(--text)
-  overlay_text: var(--hltext)
-  footer_text: var(--text)
 
-# theme fonts
-fonts:
-  # headings
-  heading: Poppins
-  # body
-  body: Noto Sans
-  # monospace
-  mono: JetBrains Mono
-font-files:
-  # headings
-  heading: 
-  heading-bold: 
-  heading-italic: 
-  heading-bold-italic: 
-  # body
-  body: 
-  body-bold: 
-  body-italic: 
-  body-bold-italic: 
-  # monospace
-  mono: 
-  mono-bold: 
-  mono-italic: 
-  mono-bold-italic: 
+# colours
+primary_color: "#05b2dc"
+secondary_color: "#ef9B0f"
+tertiary_color: "#ef3e36"
+# shades
+base_color: "#ffffff"
+mantle_color: "#f5f4f5"
+crust_color: "#d4d2d5"
+overlay_color: "#9B9B9E"
+footer_color: var(--text)
+# text
+text_color: "#343233"
+hltext_color: "#ffffff"
+# background-specific text
+primary_text_color: var(--hltext)
+secondary_text_color: var(--hltext)
+tertiary_text_color: var(--hltext)
+base_text_color: var(--text)
+mantle_text_color: var(--text)
+crust_text_color: var(--text)
+overlay_text_color: var(--hltext)
+footer_text_color: var(--hltext)
+
+# colours (dark)
+primary_color_dark: "#05b2dc"
+secondary_color_dark: "#ef9B0f"
+tertiary_color_dark: "#ef3e36"
+# shades (dark)
+base_color_dark: "#343233"
+mantle_color_dark: "#373536"
+crust_color_dark: "#3E3C3D"
+overlay_color_dark: "#646461"
+footer_color_dark: "#242223"
+# text (dark)
+text_color_dark: "#ffffff"
+hltext_color_dark: "#343233"
+# background-specific text (dark)
+primary_text_color_dark: var(--text)
+secondary_text_color_dark: var(--text)
+tertiary_text_color_dark: var(--text)
+base_text_color_dark: var(--text)
+mantle_text_color_dark: var(--text)
+crust_text_color_dark: var(--text)
+overlay_text_color_dark: var(--hltext)
+footer_text_color_dark: var(--text)
+
+# heading font
+heading_font: Poppins
+heading_font_files:
+  regular:
+  bold:
+  italic:
+  bold_italic:
+# body font
+body_font: Noto Sans
+body_font_files:
+  regular:
+  bold:
+  italic:
+  bold_italic:
+# monospace font
+mono_font: JetBrains Mono
+mono_font_files:
+  regular:
+  bold:
+  italic:
+  bold_italic:

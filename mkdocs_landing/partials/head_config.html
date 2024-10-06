@@ -1,66 +1,66 @@
 <head>
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family={{ config.theme.fonts.heading }}');
-      @import url('https://fonts.googleapis.com/css2?family={{ config.theme.fonts.body }}');
-      @import url('https://fonts.googleapis.com/css2?family={{ config.theme.fonts.mono }}');
+      @import url('https://font.googleapis.com/css2?family={{ config.theme.heading_font }}');
+      @import url('https://fonts.googleapis.com/css2?family={{ config.theme.body_font }}');
+      @import url('https://fonts.googleapis.com/css2?family={{ config.theme.mono_font }}');
   
       :root {
         /* colors */
-        --primary: {{config.theme.colors.primary}};
-        --secondary: {{config.theme.colors.secondary}};
-        --tertiary: {{config.theme.colors.tertiary}};
+        --primary: {{config.theme.primary_color}};
+        --secondary: {{config.theme.secondary_color}};
+        --tertiary: {{config.theme.tertiary_color}};
         /* shades */
-        --base: {{config.theme.colors.base}};
-        --mantle: {{config.theme.colors.mantle}};
-        --crust: {{config.theme.colors.crust}};
-        --overlay: {{config.theme.colors.overlay}};
-        --footer: {{config.theme.colors.footer}};
+        --base: {{config.theme.base_color}};
+        --mantle: {{config.theme.mantle_color}};
+        --crust: {{config.theme.crust_color}};
+        --overlay: {{config.theme.overlay_color}};
+        --footer: {{config.theme.footer_color}};
         /* text */
-        --text: {{config.theme.colors.text}};
-        --hltext: {{config.theme.colors.hltext}};
+        --text: {{config.theme.text_color}};
+        --hltext: {{config.theme.hltext_color}};
         color: var(--text);
         /* background-specific text */
-        --primary-text: {{config.theme.colors.primary_text}};
-        --secondary-text: {{config.theme.colors.secondary_text}};
-        --tertiary-text: {{config.theme.colors.tertiary_text}};
-        --base-text: {{config.theme.colors.base_text}};
-        --mantle-text: {{config.theme.colors.mantle_text}};
-        --crust-text: {{config.theme.colors.crust_text}};
-        --overlay-text: {{config.theme.colors.overlay_text}};
-        --footer-text: {{config.theme.colors.footer_text}};
+        --primary-text: {{config.theme.primary_text_color}};
+        --secondary-text: {{config.theme.secondary_text_color}};
+        --tertiary-text: {{config.theme.tertiary_text_color}};
+        --base-text: {{config.theme.base_text_color}};
+        --mantle-text: {{config.theme.mantle_text_color}};
+        --crust-text: {{config.theme.crust_text_color}};
+        --overlay-text: {{config.theme.overlay_text_color}};
+        --footer-text: {{config.theme.footer_text_color}};
         /* fonts */
-        --heading: {{config.theme.fonts.heading}};
-        --body: {{config.theme.fonts.body}};
-        --mono: {{config.theme.fonts.mono }};
+        --heading: {{config.theme.heading_font}};
+        --body: {{config.theme.body_font}};
+        --mono: {{config.theme.mono_font}};
         font-family: var(--body); 
       }
       /* dark mode */
       @media (prefers-color-scheme: dark) {
         :root {
           /* colors */
-          --primary: {{config.theme.colors_dark.primary}};
-          --secondary: {{config.theme.colors_dark.secondary}};
-          --tertiary: {{config.theme.colors_dark.tertiary}};
+          --primary: {{config.theme.primary_color_dark}};
+          --secondary: {{config.theme.secondary_color_dark}};
+          --tertiary: {{config.theme.tertiary_color_dark}};
           /* shades */
-          --base: {{config.theme.colors_dark.base}};
-          --mantle: {{config.theme.colors_dark.mantle}};
-          --crust: {{config.theme.colors_dark.crust}};
-          --overlay: {{config.theme.colors_dark.overlay}};
-          --footer: {{config.theme.colors_dark.footer}};
+          --base: {{config.theme.base_color_dark}};
+          --mantle: {{config.theme.mantle_color_dark}};
+          --crust: {{config.theme.crust_color_dark}};
+          --overlay: {{config.theme.overlay_color_dark}};
+          --footer: {{config.theme.footer_color_dark}};
           /* text */
-          --text: {{config.theme.colors_dark.text}};
-          --hltext: {{config.theme.colors_dark.hltext}};
+          --text: {{config.theme.text_color_dark}};
+          --hltext: {{config.theme.hltext_color_dark}};
           color: var(--text);
           /* background-specific text */
-          --primary-text: {{config.theme.colors_dark.primary_text}};
-          --secondary-text: {{config.theme.colors_dark.secondary_text}};
-          --tertiary-text: {{config.theme.colors_dark.tertiary_text}};
-          --base-text: {{config.theme.colors_dark.base_text}};
-          --mantle-text: {{config.theme.colors_dark.mantle_text}};
-          --crust-text: {{config.theme.colors_dark.crust_text}};
-          --overlay-text: {{config.theme.colors_dark.overlay_text}};
-          --footer-text: {{config.theme.colors_dark.footer_text}};
+          --primary-text: {{config.theme.primary_text_color_dark}};
+          --secondary-text: {{config.theme.secondary_text_color_dark}};
+          --tertiary-text: {{config.theme.tertiary_text_color_dark}};
+          --base-text: {{config.theme.base_text_color_dark}};
+          --mantle-text: {{config.theme.mantle_text_color_dark}};
+          --crust-text: {{config.theme.crust_text_color_dark}};
+          --overlay-text: {{config.theme.overlay_text_color_dark}};
+          --footer-text: {{config.theme.footer_text_color_dark}};
         }
       }
       /* style settings */
