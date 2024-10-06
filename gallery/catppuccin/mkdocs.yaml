@@ -37,57 +37,54 @@ theme:
     - transparent
     - color-mix(in srgb, var(--base) 80%, transparent)
   round_avatar: True
-
-  # theme colours
-  colors:
-    # colours
-    primary: "#7287fd"
-    secondary: "#dc8a78"
-    tertiary: "#179299"
-    # shades
-    base: "#eff1f5"
-    mantle: "#e6e9ef"
-    crust: "#dce0e8"
-    overlay: "#9ca0b0"
-    footer: var(--text)
-    # text
-    text: "#4c4f69"
-    hltext: var(--base)
-    # background-specific text
-    primary_text: var(--hltext)
-    secondary_text: var(--hltext)
-    tertiary_text: var(--hltext)
-    base_text: var(--text)
-    mantle_text: var(--text)
-    crust_text: var(--text)
-    overlay_text: var(--hltext)
-    footer_text: var(--hltext)
-  # dark mode variants
-  colors_dark:
-    # colours
-    primary: "#b4befe"
-    secondary: "#f5e0dc"
-    tertiary: "#94e2d5"
-    # shades
-    base: "#1e1e2e"
-    mantle: "#181825"
-    crust: "#11111b"
-    overlay: "#6c7086"
-    footer: "#01010b"
-    # text
-    text: "#cdd6f4"
-    hltext: var(--base)
-    # background-specific text
-    primary_text: var(--text)
-    secondary_text: var(--text)
-    tertiary_text: var(--text)
-    base_text: var(--text)
-    mantle_text: var(--text)
-    crust_text: var(--text)
-    overlay_text: var(--hltext)
-    footer_text: var(--text)
   
-  fonts:
-    heading: Noto Sans
-    body: Noto Sans
-    mono: Roboto Mono
+  # colours
+  primary_color: "#7287fd"
+  secondary_color: "#dc8a78"
+  tertiary_color: "#179299"
+  # shades
+  base_color: "#eff1f5"
+  mantle_color: "#e6e9ef"
+  crust_color: "#dce0e8"
+  overlay_color: "#9ca0b0"
+  footer_color: var(--text)
+  # text
+  text_color: "#4c4f69"
+  hltext_color: var(--base)
+  # background-specific text
+  primary_text_color: var(--hltext)
+  secondary_text_color: var(--hltext)
+  tertiary_text_color: var(--hltext)
+  base_text_color: var(--text)
+  mantle_text_color: var(--text)
+  crust_text_color: var(--text)
+  overlay_text_color: var(--hltext)
+  footer_text_color: var(--hltext)
+
+  # colours (dark)
+  primary_color_dark: "#b4befe"
+  secondary_color_dark: "#f5e0dc"
+  tertiary_color_dark: "#94e2d5"
+  # shades (dark)
+  base_color_dark: "#1e1e2e"
+  mantle_color_dark: "#181825"
+  crust_color_dark: "#11111b"
+  overlay_color_dark: "#6c7086"
+  footer_color_dark: "#01010b"
+  # text (dark)
+  text_color_dark: "#cdd6f4"
+  hltext_color_dark: var(--base)
+  # background-specific text (dark)
+  primary_text_color_dark: var(--text)
+  secondary_text_color_dark: var(--text)
+  tertiary_text_color_dark: var(--text)
+  base_text_color_dark: var(--text)
+  mantle_text_color_dark: var(--text)
+  crust_text_color_dark: var(--text)
+  overlay_text_color_dark: var(--hltext)
+  footer_text_color_dark: var(--text)
+  
+  # fonts
+  heading_font: Noto Sans
+  body_font: Noto Sans
+  mono_font: Roboto Mono
