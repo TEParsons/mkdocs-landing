@@ -11,8 +11,6 @@ theme:
   avatar: "branding/logo.png"
   tagline: |
     /[lændɪŋ](http://ipa-reader.xyz/?text=lændɪŋ)/
-  footer: |
-      Compiled from markdown using [MkDocs](https://www.mkdocs.org/), hosted via [GitHub Pages](https://pages.github.com/).
   page_source: 
     link: https://github.com/TEParsons/mkdocs-landing
   socials:
