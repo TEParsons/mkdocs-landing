@@ -115,6 +115,7 @@ nav#socials i {
     object-fit: cover;
     margin: 0 1rem 0 0;
     max-width: calc(100% - 1rem);
+    border: none;
 }
 
 
@@ -213,6 +214,7 @@ img {
     box-shadow: 0 0 1rem var(--shadow);
     border-radius: 1rem;
     margin: 1rem;
+    border: 2px solid var(--overlay);
 }
 
 blockquote {
