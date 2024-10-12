@@ -233,6 +233,48 @@ pre {
     overflow-x: auto;
 }
 
+table {
+    border-collapse: collapse;
+    margin: 1rem 8px;
+}
+
+thead {
+    position: relative;
+    background-color: var(--primary);
+    color: var(--primary-text);
+}
+
+thead:before,
+thead:after {
+    content: " ";
+    background-color: var(--primary);
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+}
+
+thead:before {
+    right: 100%;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+thead:after {
+    left: 100%;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+tbody tr {
+    border-bottom: 1px solid var(--overlay);
+}
+
+th, td {
+    padding: 1rem;
+}
+
 
 iframe {
     width: calc(100% + 2rem);
