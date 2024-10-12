@@ -7,6 +7,9 @@ authors = [
 description = "mkdocs theme geared towards making a personal landing page, with simpler navigation and heavily customisable style options."
 readme = "README.md"
 
+dependencies = [
+    "mkdocs"
+]
 [project.optional-dependencies]
 tests = [
     "pytest",
