@@ -72,52 +72,57 @@ If True, then the avatar will be cropped into a circle.
 The border on either side of the content box (defined using the same syntax as in `border-left`/`border-right` in CSS)
 
 # Colors
-The following attributes affect the colors used in your site.
-
 ## Scheme colors
-These are the colors which define your theme, ordered by importance.
+The defining colors of your theme, ordered by importance. They're used for things like link colors, borders and hover effects. The attributes for scheme colors are:
 
-### `primary_color`
-The first scheme color, this will be used for the footer and the tagline.
+- `primary_color`
+- `secondary_color`
+- `tertiary_color`
 
-### `secondary_color`
-The second scheme color, this will be used for links.
+By default, these are:
 
-### `tertiary_color`
-The third scheme color, this will be used for links when hovered.
+| primary_color | secondary_color | tertiary_color |
+| ------- | ------- | ------- |
+| #05b2dc | #ef9B0f | #ef3e36 |
 
 ## Shades
-Various shades of white to use for backgrounds
+Various shades of white (or black in dark mode) to use for backgrounds and faint outlines. These should start with `base_color` and get progressively lighter/darker from there. The attributes for shades are:
 
-### `base_color`
-The base color, the background of the content box.
+- `base_color`
+- `mantle_color`
+- `crust_color`
+- `overlay_color`
 
-### `mantle_color`
-Slightly darker than the base color, used for subtle highlights
+By default, these are:
 
-### `crust_color`
-Slighter darker than the mantle color, used for second-level highlights
-
-### `overlay_color`
-Significantly darker than the crust color, used for subtle outlines which need to stand out
+|       | base_color | mantle_color | crust_color | overlay_color |
+| ----- | ------- | ------- | ------- | ------- |
+| Light | #ffffff | #e5e4e5 | #c4c2c5 | #9B9B9E |
+| Dark  | #343233 | #373536 | #3E3C3D | #646461 |
 
 ## Text colors
-### `text_color`
-Basic text color
+Colors to use for text in your site, one for the majority of text, another for text which is over a highlighted background. The two attributes for main text colors are:
 
-### `hltext_color`
-Basic text color for display against dark backgrounds
+- `text_color`
+- `hltext_color`
 
-## Background-specific text colors
+By default, these are:
+
+|       | text_color | hltext_color |
+| ----- | ------- | ------- |
+| Light | #343233 | #ffffff |
+| Dark  | #ffffff | #343233 |
+
+### Background-specific text colors
 Each of the colors above has a matching parameter which is its name with `_color` replaced by `_text_color` (e.g. `primary_text_color` rather than `primary_color`), which defines the color for text when against that background color. These default to being either `text_color` or `hltext_color`, with the following defaults:
 
-- primary_text_color: hltext
-- secondary_text_color: hltext
-- tertiary_text_color: hltext
-- base_text_color: text
-- mantle_text_color: text
-- crust_text_color: text
-- overlay_text_color: hltext
+- `primary_text_color`: hltext
+- `secondary_text_color`: hltext
+- `tertiary_text_color`: hltext
+- `base_text_color`: text
+- `mantle_text_color`: text
+- `crust_text_color`: text
+- `overlay_text_color`: hltext
 
 ## Darkmode colors
 To define the colors which are used in darkmode, use the same parameter names but with `_dark` on the end (e.g. `primary_color_dark` rather than `primary_color`)
