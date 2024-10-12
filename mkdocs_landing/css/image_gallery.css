@@ -1,0 +1,43 @@
+  image-gallery {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(auto-fill, 10rem);
+    grid-template-rows: auto repeat(auto-fill, 10rem);
+    grid-gap: 1rem;
+    margin: .5rem;
+    padding: .5rem;
+  }
+  
+  image-gallery .gallery-item {
+    position: relative;
+    width: 100%;
+  }
+
+  image-gallery .gallery-item:hover,
+  image-gallery .gallery-item.selected {
+    border: .5rem solid #d2d2d2;
+    left: -.5rem;
+    top: -.5rem;
+  }
+  
+  image-gallery .gallery-preview {
+    position: relative;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  image-gallery .gallery-preview img {
+    width: 100%;
+  }
+  
+  image-gallery .gallery-hide-btn {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    opacity: 0.5;
+  }
+  
+  image-gallery .gallery-hide-btn:hover {
+    opacity: 1;
+  }
