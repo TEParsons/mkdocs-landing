@@ -115,6 +115,9 @@ ul#socials {
     padding: 0;
     margin: 0;
 }
+ul#socials li {
+    display: inline;
+}
 ul#socials i {
     margin: inherit;
 }
