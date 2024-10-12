@@ -5,7 +5,7 @@
     <div id="avatar"></div>
     {% endif %}
 {% elif emt == "socials" %}
-    <nav id="socials">
+    <ul id="socials">
         {% for social in config.theme.socials %}
         {% if social.icon is string %}
         {% set social_src = "regular" %}
@@ -17,9 +17,9 @@
         {% set social_src = "regular" %}
         {% set social_tag = social.icon[0] %}
         {% endif %}
-        <a href="{{ social.link }}"><i class="fa-{{ social_src }} fa-{{ social_tag }}" alt="{{ social.label }}"></i></a>
+        <li><a href="{{ social.link }}"><i class="fa-{{ social_src }} fa-{{ social_tag }}" alt="{{ social.label }}"></i></a></li>
         {% endfor %}
-    </nav>
+    </ul>
 {% elif emt == "tagline" %}
     {{ config.theme.tagline | markdown(id="tagline") }}
 {% elif emt == "title" %}
