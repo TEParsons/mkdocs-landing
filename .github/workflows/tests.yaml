@@ -1,0 +1,64 @@
+name: Run tests
+
+on:
+  workflow_dispatch:  # manual
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  mac-tests:
+    name: Run tests on Mac
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+    
+    - name: Install package and dependencies
+      run: |
+        python3 -m pip install -e .[tests]
+    
+    - name: Run tests
+      run: |
+        pytest
+  
+  windows-tests:
+    name: Run tests on Windows
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+    
+    - name: Install package and dependencies
+      run: |
+        python3 -m pip install -e .[tests]
+    
+    - name: Run tests
+      run: |
+        pytest
+    
+  linux-tests:
+    name: Run tests on Linux
+    runs-on: ubuntu-latest
+
+    steps:
+        - name: Checkout
+          uses: actions/checkout@v4
+    
+        - name: Set up Python
+          uses: actions/setup-python@v4
+        
+        - name: Install package and dependencies
+          run: |
+            python3 -m pip install -e .[tests]
+        
+        - name: Run tests
+          run: |
+            pytest
