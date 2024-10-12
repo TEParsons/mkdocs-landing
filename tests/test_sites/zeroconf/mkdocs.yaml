@@ -1,0 +1,8 @@
+site_name: Test Zero Configuration Build
+
+docs_dir: src
+draft_docs: vault
+site_dir: ../../artefacts/test_zeroconf
+
+theme:
+  name: landing

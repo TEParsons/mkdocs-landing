@@ -7,6 +7,11 @@ authors = [
 description = "mkdocs theme geared towards making a personal landing page, with simpler navigation and heavily customisable style options."
 readme = "README.md"
 
+[project.optional-dependencies]
+tests = [
+    "pytest",
+]
+
 [project.urls]
 Homepage = "https://TEParsons.github.io/mkdocs-landing"
 Download = "https://github.com/TEParsons/mkdocs-landing/releases"
