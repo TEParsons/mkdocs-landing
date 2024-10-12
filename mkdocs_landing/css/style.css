@@ -208,6 +208,16 @@ p {
     margin-bottom: 1rem;
 }
 
+i.color-preview {
+    display: inline;
+    text-shadow: 
+        -2px +0px 0 var(--mantle), 
+        +0px +2px 0 var(--mantle), 
+        +2px +0px 0 var(--mantle), 
+        +0px -2px 0 var(--mantle);
+        margin: 2px .4em;
+}
+
 /** Block elements **/
 
 img {

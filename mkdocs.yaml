@@ -45,3 +45,6 @@ theme:
     bold: "assets/fonts/jetbrains_mono/JetBrainsMono-Bold.ttf"
     italic: "assets/fonts/jetbrains_mono/JetBrainsMono-Italic.ttf"
     bold_italic: "assets/fonts/jetbrains_mono/JetBrainsMono-BoldItalic.ttf"
+
+hooks:
+  - mkdocs_landing/hooks/hexcodes.py
