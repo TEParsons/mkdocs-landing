@@ -3,16 +3,16 @@ name: landing
 # customisation options
 
 # images
-favicon: ""
-avatar: ""
+favicon: "assets/landing-favicon.png"
+avatar: "assets/landing-logo.png"
 # information
-tagline: 
+tagline: ""
 footer: |
     Compiled from markdown using [MkDocs](https://www.mkdocs.org/). Theme is [Landing](https://teparsons.github.io/mkdocs-landing/) by [Todd Parsons](https://toddparsons.co.uk).
 page_source: 
   link: 
   icon: [brands, github]
-socials:
+socials: []
 
 # style options
 header_layout:
