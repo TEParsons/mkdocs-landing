@@ -76,6 +76,7 @@ article {
 
 header#header {
     display: grid;
+    column-gap: 1rem;
     align-items: end;
 }
 header#header #title,
@@ -112,9 +113,9 @@ nav#socials i {
     margin: inherit;
 }
 #avatar {
-    object-fit: cover;
-    margin: 0 1rem 0 0;
-    max-width: calc(100% - 1rem);
+    object-fit: contain;
+    margin: auto;
+    min-width: 100%;
     border: none;
 }
 
