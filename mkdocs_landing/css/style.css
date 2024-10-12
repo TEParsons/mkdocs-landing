@@ -129,6 +129,7 @@ nav#toc {
     position: absolute;
     right: calc(100% + 5rem);
     text-align: right;
+    top: 4rem;
 }
 nav#toc ul {
     list-style-type: none;
