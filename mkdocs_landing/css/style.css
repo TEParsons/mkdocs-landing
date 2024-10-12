@@ -13,7 +13,6 @@ body {
 header#header, 
 header#article-header,
 #page {
-    padding-top: 4rem;
     position: relative;
 }
 
@@ -78,6 +77,10 @@ header#header {
     display: grid;
     column-gap: 1rem;
     align-items: end;
+    padding-top: 4rem;
+}
+header#article-header {
+    padding-top: 4rem;
 }
 header#header #title,
 header#header #title a {
@@ -126,10 +129,13 @@ ul#socials i {
 /** Table of contents **/
 
 nav#toc {
-    position: absolute;
-    right: calc(100% + 5rem);
+    position: sticky;
     text-align: right;
     top: 4rem;
+    width: 100%;
+    margin-left: calc(-100% - 5rem);
+    height: 0;
+    margin-top: 4rem;
 }
 nav#toc ul {
     list-style-type: none;
