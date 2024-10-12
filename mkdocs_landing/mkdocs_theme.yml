@@ -43,8 +43,8 @@ secondary_color: "#ef9B0f"
 tertiary_color: "#ef3e36"
 # shades
 base_color: "#ffffff"
-mantle_color: "#f5f4f5"
-crust_color: "#d4d2d5"
+mantle_color: "#e5e4e5"
+crust_color: "#c4c2c5"
 overlay_color: "#9B9B9E"
 # text
 text_color: "#343233"
