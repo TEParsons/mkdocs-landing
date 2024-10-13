@@ -79,6 +79,7 @@ The angle of the background gradient, by default this will be 45° (i.e. from bo
 
 ### `background_gradient_colors`
 The colors comprising the background gradient, as a list. These will be evenly spaced out, but you can use the same color multiple times to have it occupy more space. You can use any CSS color syntax, including `transparent` and `color-mix(<color 1> <amount>%, <color 2>)`. The default colors are:
+
 - Your [`mantle_color`](#shades) at 80% opacity
 - `transparent`
 - Your [`crust_color`](#shades) at 20% opacity
