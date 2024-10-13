@@ -7,8 +7,8 @@ site_dir: docs
 theme:
   name: landing
 
-  favicon: "branding/favicon.png"
-  avatar: "branding/logo.png"
+  favicon: "assets/branding/favicon.png"
+  avatar: "assets/branding/logo.png"
   tagline: |
     /[lændɪŋ](http://ipa-reader.xyz/?text=lændɪŋ)/
   page_source: 
