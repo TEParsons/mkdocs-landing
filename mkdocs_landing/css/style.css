@@ -143,24 +143,31 @@ nav#toc {
 nav#toc ul {
     list-style-type: none;
 }
+nav#toc li {
+    margin-bottom: .5rem;
+}
 nav#toc a {
     display: block;
     white-space: nowrap;
     margin: 0.5rem 0;
 }
-nav#toc + * {
-    margin-top: 0;
-}
-
 nav#toc .toc-subitem a {
+    display: inline;
     color: var(--text);
     opacity: 35%;
 }
-nav#toc .toc-subitem {
-    display: none;
+
+nav#toc .toc-item ul {
+    overflow-y: hidden;
+    transition: transform  0.25s ease;
+    transform-origin: top center;
+    transform: scaleY(0);
+    height: 0;
 }
-nav#toc .toc-item:hover .toc-subitem {
-    display: inline;
+nav#toc .toc-item:hover ul {
+    transition: transform  0.25s ease;
+    transform: scaleY(1);
+    height: auto;
 }
 
 

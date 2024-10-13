@@ -1,6 +1,6 @@
 {% if config.theme.toc_level > 0 %}
-{% for toc_item in page.toc %}
 <ul>
+{% for toc_item in page.toc %}
 <li class="toc-item">
 <a href="{{ toc_item.url }}">{{ toc_item.title }}</a>
     {% if config.theme.toc_level > 1 %}
@@ -15,6 +15,6 @@
     </ul>
     {% endif %}
 </li>
-</ul>
 {% endfor %}
+</ul>
 {% endif %}
