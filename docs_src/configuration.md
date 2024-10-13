@@ -14,6 +14,7 @@ The header is laid out in a grid with three columns; the outer columns are each 
 
 - avatar (1 column wide): The image defined in [`avatar`](#avatar)
 - tagline (2 columns wide): The markdown text defined in [`tagline`](#tagline)
+- nav (2 columns wide): Top level links from the site-wide navigation defined in [`nav`](https://www.mkdocs.org/user-guide/configuration/#nav) (in general config)
 - title (2 columns wide): The name of your site defined in [`site_name`](https://www.mkdocs.org/user-guide/configuration/#site_name) (in general config)
 - socials (2 columns wide): Social media links defined in [`socials`](#socials)
 

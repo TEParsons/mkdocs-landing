@@ -24,6 +24,18 @@
     {{ config.theme.tagline | markdown(id="tagline") }}
 {% elif emt == "title" %}
     <h1 id="title"><a href={{ "." | url }}>{{ config.site_name }}</a></h1>
+{% elif emt == "nav" %}
+    <nav class="horizontal" id="site-nav">
+        <ul>
+            {% for nav_item in nav %}
+            {% if nav_item.children and not nav_item.url %}
+            <li class="nav-item"><a class="{% if nav_item.active %}current{% endif %}" href="{{ nav_item.children[0].url|url }}">{{nav_item.title }}</a></li>
+            {% else %}
+            <li class="nav-item"><a class="{% if nav_item.active %}current{% endif %}" href="{{ nav_item.url|url }}">{{nav_item.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
 {% else %}
     <div></div>
 {% endif %}
