@@ -37,15 +37,22 @@ List of social links to include, should be in the format:
 All of the free fontawesome icons are supported, you can also use `["brands", <icon name>]` to use a brand logo instead (such as GitHub, Facebook, BlueSky, etc.)
 
 # Style configuration
+### `avatar_size`
+The width of the avatar, default is 8rem.
+
 ### `header_layout`
-This defines the order in which elements in the header are laid out. Elements available are:
+The header is laid out in a grid with three columns; the outer columns are each the width of your avatar (defined in `avatar_size`), the middle column is the remaining space. Within the header are several different "elements" - this parameter defines which elements are included and in what order they are laid out. The elements available are:
 
-- avatar
-- tagline
-- title
-- socials
+- avatar (1 column wide): The image defined in `avatar`
+- tagline (2 columns wide): The markdown text defined in `tagline`
+- title (2 columns wide): The name of your site
+- socials (2 columns wide): Social media links, defined in `socials`
 
-You can also include a blank element to put an empty div tag to fill a slot
+You can also include a blank list item to put an empty div tag if you need to fill a column. Once an element spans past the final column, it is moved to the row below in order to fit. The image below shows how the header on this site is laid out, with the grid visible thanks to Google Chrome's "inspect" tool:
+
+![Landing's homepage header with grid visible](landing_header_diagram.png)
+
+So the first row has the avatar (1 column wide) and the tagline (2 columns wide), forcing the title (2 columns wide) onto the next row. As there is only 1 column left on this row and the social links are 2 columns wide, they are forced onto the next row.
 
 ### `background`
 Background for the whole page, this will be behind the content box. Syntax is the same as the CSS `background` property.
@@ -62,8 +69,7 @@ The box containing your site content will be your base color, this parameter con
 ### `content_box_padding`
 The distance between the horizontal edges of your content and the edges of the content box.
 
-### `avatar_size`
-The width of the avatar, default is 8rem.
+
 
 ### `round_avatar`
 If True, then the avatar will be cropped into a circle.
