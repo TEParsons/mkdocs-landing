@@ -3,12 +3,88 @@ template: article.html
 title: Configuration options
 ---
 
-# Site information
-### `favicon`
-Image in the browser tab, should be a path to an image file, ideally a 16x16px .png file.
+The following parameters can be added to the `theme` section of your `mkdocs.yaml` file to control how your specific site deviates from Landing's default look and feel, to give it your own identity. [Click here](https://www.mkdocs.org/user-guide/configuration/) for a general guide on using mkdocs and the `mkdocs.yaml` configuration file.
+
+
+# Header
+The below parameters are for configuring the layout and appearance of the header, which appears at the top of the main homepage of your site.
+
+### `header_layout`
+The header is laid out in a grid with three columns; the outer columns are each the width of your avatar (defined in [`avatar_size`](#avatar_size)), the middle column is the remaining space. Within the header are several different "elements" - this parameter defines which elements are included and in what order they are laid out. The elements available are:
+
+- avatar (1 column wide): The image defined in [`avatar`](#avatar)
+- tagline (2 columns wide): The markdown text defined in [`tagline`](#tagline)
+- title (2 columns wide): The name of your site defined in [`site_name`](https://www.mkdocs.org/user-guide/configuration/#site_name) (in general config)
+- socials (2 columns wide): Social media links defined in [`socials`](#socials)
+
+You can also include a blank list item to put an empty div tag if you need to fill a column. Once an element spans past the final column, it is moved to the row below in order to fit. The image below shows how the header on this site is laid out, with the grid visible thanks to Google Chrome's "inspect" tool:
+
+![Landing's homepage header with grid visible](landing_header_diagram.png)
+
+So the first row has the avatar (1 column wide) and the tagline (2 columns wide), forcing the title (2 columns wide) onto the next row. As there is only 1 column left on this row and the social links are 2 columns wide, they are forced onto the next row.
 
 ### `avatar`
 Image of yourself, this will appear in the heading of the main page.
+
+### `avatar_size`
+The width of the avatar, default is 8rem.
+
+### `round_avatar`
+If True, then the avatar will be cropped into a circle.
+
+### `tagline`
+A markdown string to be displayed in the header, smaller than the title. For professional profiles, this might be your job title or demographic information (e.g. pronouns, name pronunciation).
+
+### `socials`
+List of social links to include, should be in the format:
+```
+- label: <text to display if the icon doesn't load>
+  link: <url to link to when clicked>
+  icon: <name of the icon to use, from fontawesome>
+```
+All of the free fontawesome icons are supported, you can also use `["brands", <icon name>]` to use a brand logo instead (such as GitHub, Facebook, BlueSky, etc.)
+
+
+# Content box
+The below parameters are for configuring the content box, which contains the content of your site (and the header) and sits in front of the background.
+
+### `content_box_opacity`
+The box containing your site content will always be color you define for [`base_color`](#Shades), this parameter controls how opaque it is over the background.
+
+### `content_box_padding`
+The distance between the horizontal edges of your content and the edges of the content box.
+
+### `border_left` / `border_right`
+The border on either side of the content box (defined using the same syntax as in `border-left`/`border-right` in CSS).
+
+
+# Background
+The below parameters are for configuring the background of your site, which sits behind the content box.
+
+### `background`
+Background for the whole page, . Syntax is the same as the CSS `background` property. By default, the background color of your site will be the color you define for [`base_color`](#Shades) and there is no background image.
+
+### `background_color`
+Color override for `background`. Whatever value is in here will be used for the CSS `background-color` property (which overrides any color set in `background`). 
+
+### `background_image`
+Image override for `background`. Whatever value is in here will be used for the CSS `background-image` property (which overrides any color set in `background`). Unlike `background`, you do not need to include the `url(...)` wrapper - just a file path will suffice.
+
+## Background gradient
+The background gradient is a gradient overlay which sits on top of your background but still behind the content box.
+
+### `background_gradient_angle`
+The angle of the background gradient, by default this will be 45° (i.e. from bottom left to top right).
+
+### `background_gradient_colors`
+The colors comprising the background gradient, as a list. These will be evenly spaced out, but you can use the same color multiple times to have it occupy more space. You can use any CSS color syntax, including `transparent` and `color-mix(<color 1> <amount>%, <color 2>)`. The default colors are:
+- Your [`mantle_color`](#Shades) at 80% opacity
+- `transparent`
+- Your [`mantle_color`](#Shades) at 60% opacity
+
+
+# Footer
+The below parameters are for configuring the content of the footer, which appears at the bottom of all pages on your site.
 
 ### `footer`
 Markdown content to include in the page footer
@@ -27,55 +103,6 @@ page_source:
 ```
 If specified without `icon`, the icon will default to the GitHub logo (equivalent to `icon: [brands, github]`)
 
-### `socials`
-List of social links to include, should be in the format:
-```
-- label: <text to display if the icon doesn't load>
-  link: <url to link to when clicked>
-  icon: <name of the icon to use, from fontawesome>
-```
-All of the free fontawesome icons are supported, you can also use `["brands", <icon name>]` to use a brand logo instead (such as GitHub, Facebook, BlueSky, etc.)
-
-# Style configuration
-### `avatar_size`
-The width of the avatar, default is 8rem.
-
-### `header_layout`
-The header is laid out in a grid with three columns; the outer columns are each the width of your avatar (defined in `avatar_size`), the middle column is the remaining space. Within the header are several different "elements" - this parameter defines which elements are included and in what order they are laid out. The elements available are:
-
-- avatar (1 column wide): The image defined in `avatar`
-- tagline (2 columns wide): The markdown text defined in `tagline`
-- title (2 columns wide): The name of your site
-- socials (2 columns wide): Social media links, defined in `socials`
-
-You can also include a blank list item to put an empty div tag if you need to fill a column. Once an element spans past the final column, it is moved to the row below in order to fit. The image below shows how the header on this site is laid out, with the grid visible thanks to Google Chrome's "inspect" tool:
-
-![Landing's homepage header with grid visible](landing_header_diagram.png)
-
-So the first row has the avatar (1 column wide) and the tagline (2 columns wide), forcing the title (2 columns wide) onto the next row. As there is only 1 column left on this row and the social links are 2 columns wide, they are forced onto the next row.
-
-### `background`
-Background for the whole page, this will be behind the content box. Syntax is the same as the CSS `background` property.
-
-### `background_color`
-Color override for `background`. Whatever value is in here will be used for the CSS `background-color` property (which overrides any color set in `background`)
-
-### `background_image`
-Image override for `background`. Whatever value is in here will be used for the CSS `background-image` property (which overrides any color set in `background`). Unlike `background`, you do not need to include the `url(...)` wrapper - just a file path will suffice.
-
-### `content_box_opacity`
-The box containing your site content will be your base color, this parameter controls how opaque it is over the background.
-
-### `content_box_padding`
-The distance between the horizontal edges of your content and the edges of the content box.
-
-
-
-### `round_avatar`
-If True, then the avatar will be cropped into a circle.
-
-### `border_left` / `border_right`
-The border on either side of the content box (defined using the same syntax as in `border-left`/`border-right` in CSS)
 
 # Colors
 ## Scheme colors
@@ -164,3 +191,9 @@ body_font_files:
 
 ### A note about emojis...
 `emoji_font_files` only uses `regular` as emojis only come in one weight and style.
+
+
+# Other
+
+### `favicon`
+Image in the browser tab, should be a path to an image file, ideally a 16x16px .png file.
