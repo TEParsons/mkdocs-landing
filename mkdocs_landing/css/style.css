@@ -15,6 +15,9 @@ header#article-header,
 #page {
     position: relative;
 }
+#page *:nth-child(2) {
+    margin-top: 0;
+}
 
 content#content {
     display: block;
