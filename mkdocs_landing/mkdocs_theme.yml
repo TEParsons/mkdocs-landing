@@ -29,7 +29,7 @@ background_gradient_angle: 45
 background_gradient_colors:
   - color-mix(in srgb, var(--mantle) 80%, transparent)
   - transparent
-  - color-mix(in srgb, var(--mantle) 60%, transparent)
+  - color-mix(in srgb, var(--crust) 20%, transparent)
 avatar_size: 8rem
 round_avatar: False
 border_left: none
@@ -43,9 +43,9 @@ secondary_color: "#ef9B0f"
 tertiary_color: "#ef3e36"
 # shades
 base_color: "#ffffff"
-mantle_color: "#e5e4e5"
-crust_color: "#c4c2c5"
-overlay_color: "#9B9B9E"
+mantle_color: "#f5f4f5"
+crust_color: "#d4d2d5"
+overlay_color: "#aBaBaE"
 # text
 text_color: "#343233"
 hltext_color: "#ffffff"
