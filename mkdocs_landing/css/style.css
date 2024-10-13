@@ -33,7 +33,7 @@ footer#footer {
     color: var(--footer-text);
 }
 
-#page-source {
+footer#footer #page-source {
     display: block;
     margin: 1em 0;
 }
@@ -48,24 +48,24 @@ article {
     background-color: var(--base)
 }
 
-#page-controls {
+nav#page-controls {
     display: grid;
     grid-template-columns: auto auto;
     width: 100%;
     margin-top: 4rem;
 }
 
-#return-home {
+nav#page-controls #return-home {
     grid-column-start: 1;
     justify-self: left;
 }
 
-#return-top {
+nav#page-controls #return-top {
     grid-column-start: 2;
     justify-self: right;
 }
 
-#background-gradient {
+div#background-gradient {
     position: fixed;
     top: 0; bottom: 0; left: 0; right: 0;
 }
@@ -91,13 +91,13 @@ header#article-header #title a {
     font-size: 3rem;
 }
 
-#title, #title a {
+h1#title, h1#title a {
     grid-column-end: span 2;
     margin: 1rem 0;
     color: var(--text);
     line-height: 1em;
 }
-#tagline, #tagline a {
+p#tagline, p#tagline a {
     grid-column-end: span 2;
     font-family: var(--heading);
     font-size: 1.5rem;
@@ -121,7 +121,7 @@ ul#socials li {
 ul#socials i {
     margin: inherit;
 }
-#avatar {
+img#avatar {
     object-fit: contain;
     margin: auto;
     min-width: 100%;
