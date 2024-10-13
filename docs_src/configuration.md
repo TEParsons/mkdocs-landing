@@ -49,7 +49,7 @@ All of the free fontawesome icons are supported, you can also use `["brands", <i
 The below parameters are for configuring the content box, which contains the content of your site (and the header) and sits in front of the background.
 
 ### `content_box_opacity`
-The box containing your site content will always be color you define for [`base_color`](#Shades), this parameter controls how opaque it is over the background.
+The box containing your site content will always be color you define for [`base_color`](#shades), this parameter controls how opaque it is over the background.
 
 ### `content_box_padding`
 The distance between the horizontal edges of your content and the edges of the content box.
@@ -62,7 +62,7 @@ The border on either side of the content box (defined using the same syntax as i
 The below parameters are for configuring the background of your site, which sits behind the content box.
 
 ### `background`
-Background for the whole page, . Syntax is the same as the CSS `background` property. By default, the background color of your site will be the color you define for [`base_color`](#Shades) and there is no background image.
+Background for the whole page, . Syntax is the same as the CSS `background` property. By default, the background color of your site will be the color you define for [`base_color`](#shades) and there is no background image.
 
 ### `background_color`
 Color override for `background`. Whatever value is in here will be used for the CSS `background-color` property (which overrides any color set in `background`). 
@@ -78,9 +78,9 @@ The angle of the background gradient, by default this will be 45° (i.e. from bo
 
 ### `background_gradient_colors`
 The colors comprising the background gradient, as a list. These will be evenly spaced out, but you can use the same color multiple times to have it occupy more space. You can use any CSS color syntax, including `transparent` and `color-mix(<color 1> <amount>%, <color 2>)`. The default colors are:
-- Your [`mantle_color`](#Shades) at 80% opacity
+- Your [`mantle_color`](#shades) at 80% opacity
 - `transparent`
-- Your [`mantle_color`](#Shades) at 60% opacity
+- Your [`mantle_color`](#shades) at 60% opacity
 
 
 # Footer
