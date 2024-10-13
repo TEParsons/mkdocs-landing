@@ -13,9 +13,7 @@
     <h1 id="title">{{ page.title }}</h1>
   </header>
   <main id="page">
-    <nav id="toc">
-      {% include "partials/toc.html" %}
-    </nav>
+    {% include "partials/toc.html" %}
     {{ page.content }}
     <nav id="page-controls">
       <a href="#content" id="return-top">
