@@ -1,6 +1,6 @@
 [project]
 name = "mkdocs-landing"
-version = "0.0.4"
+version = "0.0.5"
 authors = [
     {name = "Todd Parsons", email = "todd.e.parsons@gmail.com"}
 ]
