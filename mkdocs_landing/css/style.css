@@ -110,7 +110,8 @@ p#tagline, p#tagline a {
 ul#socials {
     grid-column-end: span 2;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 1em);
+    position: relative;
+    grid-auto-flow: column;
     justify-content: left;
     grid-gap: .5em;
     font-size: 2rem;
@@ -123,6 +124,17 @@ ul#socials li {
 }
 ul#socials i {
     margin: inherit;
+}
+ul#socials .social-label {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    white-space: nowrap;
+    font-size: 1rem;
+}
+ul#socials li:hover .social-label {
+    display: block;
 }
 img#avatar {
     object-fit: contain;
@@ -161,7 +173,8 @@ nav a {
     display: block;
     white-space: nowrap;
 }
-nav .nav-subitem a {
+nav .nav-subitem a,
+ul#socials .social-label {
     color: var(--text);
     opacity: 35%;
 }

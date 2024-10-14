@@ -17,7 +17,10 @@
         {% set social_src = "regular" %}
         {% set social_tag = social.icon[0] %}
         {% endif %}
-        <li><a href="{{ social.link }}"><i class="fa-{{ social_src }} fa-{{ social_tag }}" alt="{{ social.label }}"></i></a></li>
+        <li>
+            <a href="{{ social.link }}"><i class="fa-{{ social_src }} fa-{{ social_tag }}" alt="{{ social.label }}"></i></a>
+            <div class="social-label">{{ social.label }}</div>
+        </li>
         {% endfor %}
     </ul>
 {% elif emt == "tagline" %}
