@@ -15,7 +15,7 @@
 @media (pointer:coarse) {
 
     /** Header **/
-    nav#socials {
+    ul#socials {
         font-size: 4rem;
     }
 
