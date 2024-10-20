@@ -1,0 +1,7 @@
+<header id="header">
+    {% for header_emt in config.theme.header_layout %}
+    {% with emt=header_emt %}
+    {% include "partials/header_element.html" %}
+    {% endwith %}
+    {% endfor %}
+</header>

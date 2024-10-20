@@ -1,5 +1,4 @@
 ---
-template: article.html
 title: Configuration options
 ---
 

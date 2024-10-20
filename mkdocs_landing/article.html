@@ -1,30 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!-- 
+Included only for legacy purposes, this template is no different than main.html as the distinction between homepage and articles is now inferred from file location. 
+-->
 
-{% include "partials/head_config.html" %}
-
-<body id="background">
-  <div id="background-gradient"></div>
-  <content id="content">
-  <header id="article-header">
-    <a href={{ "." | url }} id="return-home">
-      <i class="fa fa-arrow-left" alt="⇦"></i> Home
-    </a>
-    <h1 id="title">{{ page.title }}</h1>
-  </header>
-  <main id="page">
-    {% include "partials/toc.html" %}
-    {{ page.content }}
-    <nav id="page-controls">
-      <a href="#content" id="return-top">
-        <i class="fa fa-arrow-up" alt="⇧"></i> Return to top
-      </a>
-    </nav>
-  </main>
-  </content>
-  <footer id="footer">
-    {% include "partials/footer.html" %}
-  </footer>
-</body>
-
-</html>
+{% include "main.html" %}
