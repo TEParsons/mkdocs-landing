@@ -1,0 +1,384 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    margin: 0;
+}
+
+
+/** Layout **/
+
+header#header, 
+header#article-header,
+#page {
+    position: relative;
+}
+#page *:nth-child(2) {
+    margin-top: 0;
+}
+
+content#content {
+    display: block;
+    position: relative;
+    padding-bottom: 4rem;
+    max-width: 46rem;
+    margin: 0 auto 0 auto;
+    min-height: 100vh;
+}
+
+footer#footer {
+    position: relative;
+    text-align: right;
+    padding: 2rem max(calc(50% - 24rem), 2rem);
+    background-color: var(--footer);
+    color: var(--footer-text);
+}
+
+footer#footer #page-source {
+    display: block;
+    margin: 1em 0;
+}
+
+article {
+    border: 1px solid var(--crust);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-left: -1rem;
+    background-color: var(--base)
+}
+
+nav#page-controls {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+nav#page-controls #return-home {
+    grid-column-start: 1;
+    justify-self: left;
+}
+
+nav#page-controls #return-top {
+    grid-column-start: 2;
+    justify-self: right;
+}
+
+div#background-gradient {
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0;
+}
+
+
+/** Header **/
+
+header {
+    padding: 4rem 0;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+header#header {
+    display: grid;
+    align-items: end;
+}
+header#article-header {
+    display: grid;
+    grid-auto-flow: row;
+}
+header#article-header h1 {
+    font-size: 3rem;
+}
+
+h1#title, h1#title a {
+    font-size: 6rem;
+    grid-column-end: span 2;
+    margin: 0;
+    color: var(--text);
+    line-height: 1em;
+}
+p#tagline, p#tagline a {
+    grid-column-end: span 2;
+    font-family: var(--heading);
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin: 0;
+}
+ul#socials {
+    grid-column-end: span 2;
+    display: grid;
+    position: relative;
+    grid-auto-flow: column;
+    justify-content: left;
+    grid-gap: .5em;
+    font-size: 2rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul#socials li {
+    display: inline;
+}
+ul#socials i {
+    margin: inherit;
+}
+ul#socials .social-label {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    white-space: nowrap;
+    font-size: 1rem;
+}
+ul#socials li:hover .social-label {
+    display: block;
+}
+img#avatar {
+    object-fit: contain;
+    margin: auto;
+    min-width: 100%;
+    border: none;
+}
+nav#site-nav {
+    font-size: 1.5rem;
+    grid-column-end: span 2;
+    margin: 0;
+}
+
+/** Navigation **/
+
+nav ul {
+    display: grid;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav .current {
+    font-weight: bold;
+}
+nav.vertical ul {
+    grid-auto-flow: row;
+    row-gap: .5rem;
+    margin-top: .5rem;
+}
+nav.horizontal ul {
+    grid-auto-flow: column;
+    column-gap: 2rem;
+    justify-content: start;
+}
+nav a {
+    display: block;
+    white-space: nowrap;
+}
+nav .nav-subitem a,
+ul#socials .social-label {
+    color: var(--text);
+    opacity: 35%;
+}
+
+nav .nav-item ul {
+    overflow-y: hidden;
+    transition: transform 0.25s ease;
+    transform-origin: top left;
+}
+nav .nav-item:hover ul {
+    transition: transform 0.25s ease;
+}
+nav.vertical .nav-item ul {
+    transform: scaleY(0);
+    height: 0;
+}
+nav.vertical .nav-item:hover ul {
+    transform: scaleY(1);
+    height: auto;
+}
+nav.horizontal .nav-item ul {
+    transform: scaleX(0);
+    width: 0;
+}
+nav.horizontal .nav-item:hover ul {
+    transform: scaleX(1);
+    width: auto;
+}
+
+
+/** Table of contents **/
+
+nav#toc {
+    position: sticky;
+    text-align: right;
+    top: 4rem;
+    width: 100%;
+    margin-left: calc(-100% - 5rem);
+    height: 0;
+}
+
+
+/** Headings **/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading);
+    margin-bottom: 0.2rem;
+    margin-top: 1em;
+}
+h1 {
+    font-size: 2rem;
+    margin-top: 1.5em;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.2rem;
+}
+h4 {
+    font-size: 1rem;
+}
+h5 {
+    font-size: 1rem;
+}
+h6 {
+    font-size: 1rem;
+}
+
+
+/** Typography **/
+
+a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--tertiary);
+}
+
+i {
+    margin: auto 0.2em;
+}
+
+pre, code, blockquote {
+    font-family: var(--mono);
+    background-color: var(--mantle);
+}
+
+p {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+i.color-preview {
+    display: inline;
+    text-shadow: 
+        -2px +0px 0 var(--mantle), 
+        +0px +2px 0 var(--mantle), 
+        +2px +0px 0 var(--mantle), 
+        +0px -2px 0 var(--mantle);
+        margin: 2px .4em;
+}
+
+/** Block elements **/
+
+img {
+    max-width: calc(100% - 2rem);
+    box-shadow: 0 0 1rem var(--shadow);
+    border-radius: 1rem;
+    margin: 1rem;
+    border: 2px solid var(--overlay);
+}
+
+blockquote {
+    margin: 0;
+    padding: 1rem;
+}
+blockquote + ul {
+    margin-top: 0.5rem;
+    text-align: right;
+    list-style-type: none;
+}
+
+pre {
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1rem 8px;
+}
+
+thead {
+    position: relative;
+    background-color: var(--primary);
+    color: var(--primary-text);
+}
+
+thead:before,
+thead:after {
+    content: " ";
+    background-color: var(--primary);
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+}
+
+thead:before {
+    right: 100%;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+thead:after {
+    left: 100%;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+tbody tr {
+    border-bottom: 1px solid var(--overlay);
+}
+
+th, td {
+    padding: 1rem;
+}
+
+
+iframe {
+    width: calc(100% + 2rem);
+    height: 30rem;
+    margin: 1rem -1rem;
+    border: 2px solid var(--overlay);
+    border-radius: 1rem;
+    
+}
+iframe.zoomed-out {
+    zoom: 0.5;
+    height: 60rem;
+    border-width: 4px;
+}
+
+.altmetric-citation {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 1rem;
+    margin: 1rem 0;
+}
+.altmetric-embed img {
+    margin: 1rem;
+    box-shadow: none;
+}
+
+
+
+
+
