@@ -13,6 +13,15 @@ dependencies = [
 [project.optional-dependencies]
 tests = [
     "pytest",
+    "httpx",
+    "pyyaml",
+    "mkdocs-get-deps",
+    "mkdocs-material",
+    "shot-scraper",
+    "jinja2",
+    "tqdm",
+    "uv",
+    "mkdocstrings-python",
 ]
 
 [project.urls]
