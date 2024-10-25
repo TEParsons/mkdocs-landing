@@ -1,7 +1,7 @@
 # Commit convention
 This project follows the [conventional commits specification](https://www.conventionalcommits.org/en/v1.0.0/#specification) with the following tags:
 - `feat`: Added new feature
-- `enh`: Improvemed working code
+- `enh`: Improved working code
 - `fix`: Fixed broken code
 - `refac`: Moving/reformatting code without (intentionally) changing how it works, excluded from release notes unless it's a breaking change (`!`)
 - `doc`: Changes to package documentation
