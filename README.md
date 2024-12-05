@@ -7,3 +7,8 @@ Click [here](https://teparsons.github.io/mkdocs-landing/configuration/) for a fu
 
 # History
 Landing came out of me wanting to use mkdocs for [my own personal landing page](https://teparsons.github.io/mkdocs-landing#todd-parsons) - I made a custom .css file to sit alongside a generic mkdocs file and style it the way I wanted it. When implementing a [similar page for a friend](https://teparsons.github.io/mkdocs-landing#ben-ambrose) I realised that this basic structure could be fairly easily modified with a few key parameters to match a variety of different aesthetics.
+
+# Installation
+Landing is [mirrored on PyPi](https://pypi.org/project/mkdocs-landing/) and can be installed via pip:
+
+`pip install mkdocs-landing`
