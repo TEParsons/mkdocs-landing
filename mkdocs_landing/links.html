@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% include "partials/head_config.html" %}
+<link href="{{ 'css/links.css' | url }}" rel="stylesheet">
+</head>
+
+<body id="background">
+  <div id="background-gradient"></div>
+  {% if config.theme.share_btn %}
+  <a id="share" onclick="on_share()">
+    <i class="fa fa-share-alt" alt="🔗"></i>
+  </a>
+  {% endif %}
+  <content id="content">
+    {% include "partials/homepage_header.html" %}
+  <main id="page">
+    {{ page.content }}
+    <nav id="page-controls">
+      <a href="#content" id="return-top">
+        <i class="fa fa-arrow-up" alt="⇧"></i> Return to top
+      </a>
+    </nav>
+  </main>
+  </content>
+  <footer id="footer">
+    {% include "partials/footer.html" %}
+  </footer>
+</body>
+
+</html>
