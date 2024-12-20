@@ -20,6 +20,7 @@ header_layout:
   - tagline
   - title
   - socials
+share_btn: true
 content_box_opacity: 0%
 content_box_padding: 3rem
 background: "fixed center/cover var(--base)"

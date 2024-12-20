@@ -201,3 +201,6 @@ Image in the browser tab, should be a path to an image file, ideally a 16x16px .
 
 ### `toc_level`
 How many levels to include in a page-level table of contents? Use 0 to hide the table of contents altogether, use 1 to only show top level headings, use 2 to show top level headings and (when hovered) show the headings under each.
+
+### `share_btn`
+Whether or not to include a share (<i class="fa fa-share-alt" alt="🔗"></i>) button in the top right of each page. Default is `true` (shown).
