@@ -29,7 +29,7 @@ jobs:
         mkdocs build
         cd gallery/catppuccin
         mkdocs build
-        cd gallery/torillic
+        cd ../torillic
         mkdocs build
 
     - name: Commit
