@@ -1,0 +1,53 @@
+site_name: Torillic
+
+docs_dir: src
+draft_docs: vault
+site_dir: ../../docs/gallery/torillic
+
+theme:
+  name: landing
+
+  favicon: "https://teparsons.github.io/torillic/logo.png"
+  avatar: "https://teparsons.github.io/torillic/logo.png"
+  tagline: |
+    Magic is distilled laziness
+  page_source: 
+    link: https://github.com/TEParsons/torillic
+  header_layout:
+  - avatar
+  - title
+  - 
+  - tagline
+  # background
+  background_gradient_colors:
+  - color-mix(in srgb, var(--text) 20%, transparent)
+  - transparent
+  - color-mix(in srgb, var(--text) 10%, transparent)  
+  background_image: "https://teparsons.github.io/torillic/css/torillic/assets/torillic-bg.jpg"
+  content_box_opacity: 100%
+  content_box_padding: 6rem
+
+  # colours
+  primary_color: "#822000"
+  secondary_color: "#c9ad6a"
+  tertiary_color: "#822000"
+  # shades
+  base_color: "#fcf5e5"
+  mantle_color: "#e0e5c1"
+  crust_color: "#c9ad6a"
+  overlay_color: "#822000"
+  # text
+  text_color: "#000000"
+  # background-specific text
+  primary_text_color: var(--hltext)
+  secondary_text_color: var(--text)
+  tertiary_text_color: var(--text)
+  base_text_color: var(--text)
+  mantle_text_color: var(--text)
+  crust_text_color: var(--text)
+  overlay_text_color: var(--hltext)
+  
+  # fonts
+  heading_font: Crimson Text
+  body_font: Alegreya
+  mono_font: Source Code Pro

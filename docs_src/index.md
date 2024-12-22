@@ -24,6 +24,15 @@ The configuration I've got on my own personal site - not all that different than
 
 [<i class="fa-regular fa-file-code"></i> Config file](https://github.com/TEParsons/toddparsons/blob/main/mkdocs.yaml)
 
+## Torillic links
+To show off how a links page can look, here's an example page which links to the various implementations of my D&D-inspired theme, [Torillic](https://teparsons/github.io/torillic).
+
+<iframe src=https://teparsons.github.io/mkdocs-landing/gallery/torillic class=zoomed-out></iframe>
+
+[<i class="fa-regular fa-file-lines"></i> Full page](https://teparsons.github.io/mkdocs-landing/gallery/torillic)
+
+[<i class="fa-regular fa-file-code"></i> Config file](https://github.com/TEParsons/mkdocs-landing/blob/main/gallery/torillic/mkdocs.yaml)
+
 ## Ben Ambrose
 A site I built for a friend - this one relies on content being in `<article>` tags, and got a little funky with the `background_gradient` parameter.
 
