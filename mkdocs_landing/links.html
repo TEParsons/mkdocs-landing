@@ -7,12 +7,8 @@
 
 <body id="background">
   <div id="background-gradient"></div>
-  {% if config.theme.share_btn %}
-  <a id="share" onclick="on_share()">
-    <i class="fa fa-share-alt" alt="🔗"></i>
-  </a>
-  {% endif %}
   <content id="content">
+    {% include "partials/share_btn.html" %}
     {% include "partials/homepage_header.html" %}
   <main id="page">
     {{ page.content }}
