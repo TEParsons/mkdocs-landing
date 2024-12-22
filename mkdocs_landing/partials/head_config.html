@@ -196,7 +196,8 @@
     <script>
       function on_share() {
         navigator.share({
-          url: document.URL
-        })
+          url: document.URL,
+          title: "{%- if page.title %}{{page.title}} - {%- endif %}{{config.site_name}}",
+        });
       }
     </script>
