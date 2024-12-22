@@ -5,6 +5,9 @@ With Landing I've tried to expose as much of the styling as possible to mkdocs, 
 
 Click [here](configuration.md) for a full list of configuration options available.
 
+## Adding a links page
+If you'd like to add a links page, similar to [LinkTree](https://linktr.ee/) or [Campsite](https://campsite.bio/), you can do so using Landing! Click [here](links.md) for more information and examples of how the links look.
+
 # History
 Landing came out of me wanting to use mkdocs for [my own personal landing page](#todd-parsons) - I made a custom .css file to sit alongside a generic mkdocs file and style it the way I wanted it. When implementing a [similar page for a friend](#ben-ambrose) I realised that this basic structure could be fairly easily modified with a few key parameters to match a variety of different aesthetics.
 
