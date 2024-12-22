@@ -29,6 +29,8 @@ jobs:
         mkdocs build
         cd gallery/catppuccin
         mkdocs build
+        cd gallery/torillic
+        mkdocs build
 
     - name: Commit
       run: |
