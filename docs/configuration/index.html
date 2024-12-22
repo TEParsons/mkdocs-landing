@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Configuration options - Landing</title>
+    <style>
+      /* load heading font */
+      @font-face {
+        font-family: "Poppins";
+        src: url('../assets/fonts/poppins/Poppins-Regular.ttf');
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Poppins";
+        src: url('../assets/fonts/poppins/Poppins-Italic.ttf');
+        font-style: italic;
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Poppins";
+        src: url('../assets/fonts/poppins/Poppins-Bold.ttf');
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: "Poppins";
+        src: url('../assets/fonts/poppins/Poppins-BoldItalic.ttf');
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      /* load body font */
+      @font-face {
+        font-family: "Noto Sans";
+        src: url('../assets/fonts/noto_sans/NotoSans-Regular.ttf');
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Noto Sans";
+        src: url('../assets/fonts/noto_sans/NotoSans-Italic.ttf');
+        font-style: italic;
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Noto Sans";
+        src: url('../assets/fonts/noto_sans/NotoSans-Bold.ttf');
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: "Noto Sans";
+        src: url('../assets/fonts/noto_sans/NotoSans-BoldItalic.ttf');
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      /* load mono font */
+      @font-face {
+        font-family: "JetBrains Mono";
+        src: url('../assets/fonts/jetbrains_mono/JetBrainsMono-Regular.ttf');
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "JetBrains Mono";
+        src: url('../assets/fonts/jetbrains_mono/JetBrainsMono-Italic.ttf');
+        font-style: italic;
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "JetBrains Mono";
+        src: url('../assets/fonts/jetbrains_mono/JetBrainsMono-Bold.ttf');
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: "JetBrains Mono";
+        src: url('../assets/fonts/jetbrains_mono/JetBrainsMono-BoldItalic.ttf');
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      /* load emoji font */
+      @font-face {
+        font-family: "Noto Color Emoji";
+        src: url('../assets/fonts/emoji/NotoColorEmoji-Regular.ttf');
+        font-weight: 400;
+      }
+  
+      :root {
+        /* colors */
+        --primary: #05b2dc;
+        --secondary: #ef9B0f;
+        --tertiary: #ef3e36;
+        /* shades */
+        --base: #ffffff;
+        --mantle: #f5f4f5;
+        --crust: #d4d2d5;
+        --overlay: #aBaBaE;
+        --footer: #000000cc;
+        /* text */
+        --text: #343233;
+        --hltext: #ffffff;
+        color: var(--text);
+        /* background-specific text */
+        --primary-text: var(--hltext);
+        --secondary-text: var(--hltext);
+        --tertiary-text: var(--hltext);
+        --base-text: var(--text);
+        --mantle-text: var(--text);
+        --crust-text: var(--text);
+        --overlay-text: var(--hltext);
+        --footer-text: var(--hltext);
+        /* fonts */
+        --heading: Poppins, Noto Color Emoji;
+        --body: Noto Sans, Noto Color Emoji;
+        --mono: JetBrains Mono, Noto Color Emoji;
+        font-family: var(--body); 
+      }
+      /* dark mode */
+      @media (prefers-color-scheme: dark) {
+        :root {
+          /* colors */
+          --primary: #05b2dc;
+          --secondary: #ef9B0f;
+          --tertiary: #ef3e36;
+          /* shades */
+          --base: #343233;
+          --mantle: #373536;
+          --crust: #3E3C3D;
+          --overlay: #646461;
+          --footer: #00000022;
+          /* text */
+          --text: #ffffff;
+          --hltext: #343233;
+          color: var(--text);
+          /* background-specific text */
+          --primary-text: var(--text);
+          --secondary-text: var(--text);
+          --tertiary-text: var(--text);
+          --base-text: var(--text);
+          --mantle-text: var(--text);
+          --crust-text: var(--text);
+          --overlay-text: var(--hltext);
+          --footer-text: var(--text);
+        }
+      }
+      /* style settings */
+      header#header {
+        grid-template-columns: 8rem auto 8rem;
+      }
+      body#background {
+        background: fixed center/cover var(--base);
+        
+        
+      }
+      #background-gradient {
+        background: linear-gradient(
+          45deg, 
+          color-mix(in srgb, var(--mantle) 80%, transparent), transparent, color-mix(in srgb, var(--crust) 20%, transparent)
+        );
+      }
+      content#content {
+        padding: 0 3rem;
+        background: color-mix(in srgb, var(--base) 0%, transparent);
+        border-left: none;
+        border-right: none;
+      }
+      #avatar {
+        
+        border-radius: 1rem;
+        
+      }
+      footer#footer a {
+        color: #ef9B0f;
+      }
+      footer#footer a:hover {
+        color: #ef3e36;
+      }
+    </style>
+    <link rel="icon" type="image/x-icon" href=assets/branding/favicon.png>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/responsivity.css" rel="stylesheet">  
+    <script src="../search/main.js"></script>
+    <script src="https://kit.fontawesome.com/b57355f8ac.js" crossorigin="anonymous"></script>
+    <script id="altmetric-embed-js" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/altmetric_badges-e7ba41a192efc3e63f5d48f8a1916dec4b1b49c01075bc7b39481408957b3b28.js"></script>
+    <link id="altmetric-embed-css" rel="stylesheet" type="text/css" href="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed-59614f5c46b49b21eeef3bb28c4fb38d1e7069e8d014752fcb66e84942556802.css">
+    <script>
+      function on_share() {
+        navigator.share({
+          url: document.URL,
+          title: "Configuration options -Landing",
+        });
+      }
+    </script>
+</head>
+
+<body id="background">
+  <div id="background-gradient"></div>
+  <content id="content">
+  
+<a id="share-btn" onclick="on_share()">
+  <i class="fa fa-share-alt" alt="🔗"></i>
+</a>
+
+  
+  <header id="article-header">
+    <a href=.. id="return-home">
+        <i class="fa fa-arrow-left" alt="⇦"></i> Home
+    </a>
+    <h1 id="title">Configuration options</h1>
+</header>
+  
+  <main id="page">
+    <nav class="vertical" id="toc">
+
+<ul>
+
+<li class="nav-item">
+<a href="#header">Header</a>
+    
+    <ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#content-box">Content box</a>
+    
+    <ul>
+    
+    
+    
+    
+    
+    
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#background">Background</a>
+    
+    <ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="nav-subitem">
+    <a href="#background-gradient">Background gradient</a>
+    </li>
+    
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#footer">Footer</a>
+    
+    <ul>
+    
+    
+    
+    
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#colors">Colors</a>
+    
+    <ul>
+    
+    
+    <li class="nav-subitem">
+    <a href="#scheme-colors">Scheme colors</a>
+    </li>
+    
+    
+    
+    <li class="nav-subitem">
+    <a href="#shades">Shades</a>
+    </li>
+    
+    
+    
+    <li class="nav-subitem">
+    <a href="#text-colors">Text colors</a>
+    </li>
+    
+    
+    
+    <li class="nav-subitem">
+    <a href="#darkmode-colors">Darkmode colors</a>
+    </li>
+    
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#fonts">Fonts</a>
+    
+    <ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="nav-subitem">
+    <a href="#local-fonts">Local fonts</a>
+    </li>
+    
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#other">Other</a>
+    
+    <ul>
+    
+    
+    
+    
+    
+    
+    
+    </ul>
+    
+</li>
+
+</ul>
+
+</nav>
+    <p>The following parameters can be added to the <code>theme</code> section of your <code>mkdocs.yaml</code> file to control how your specific site deviates from Landing's default look and feel, to give it your own identity. <a href="https://www.mkdocs.org/user-guide/configuration/">Click here</a> for a general guide on using mkdocs and the <code>mkdocs.yaml</code> configuration file.</p>
+<h1 id="header">Header</h1>
+<p>The below parameters are for configuring the layout and appearance of the header, which appears at the top of the main homepage of your site.</p>
+<h3 id="header_layout"><code>header_layout</code></h3>
+<p>The header is laid out in a grid with three columns; the outer columns are each the width of your avatar (defined in <a href="#avatar_size"><code>avatar_size</code></a>), the middle column is the remaining space. Within the header are several different "elements" - this parameter defines which elements are included and in what order they are laid out. The elements available are:</p>
+<ul>
+<li>avatar (1 column wide): The image defined in <a href="#avatar"><code>avatar</code></a></li>
+<li>tagline (2 columns wide): The markdown text defined in <a href="#tagline"><code>tagline</code></a></li>
+<li>nav (2 columns wide): Top level links from the site-wide navigation defined in <a href="https://www.mkdocs.org/user-guide/configuration/#nav"><code>nav</code></a> (in general config)</li>
+<li>title (2 columns wide): The name of your site defined in <a href="https://www.mkdocs.org/user-guide/configuration/#site_name"><code>site_name</code></a> (in general config)</li>
+<li>socials (2 columns wide): Social media links defined in <a href="#socials"><code>socials</code></a></li>
+</ul>
+<p>You can also include a blank list item to put an empty div tag if you need to fill a column. Once an element spans past the final column, it is moved to the row below in order to fit. The image below shows how the header on this site is laid out, with the grid visible thanks to Google Chrome's "inspect" tool:</p>
+<p><img alt="Landing's homepage header with grid visible" src="../landing_header_diagram.png" /></p>
+<p>So the first row has the avatar (1 column wide) and the tagline (2 columns wide), forcing the title (2 columns wide) onto the next row. As there is only 1 column left on this row and the social links are 2 columns wide, they are forced onto the next row.</p>
+<h3 id="avatar"><code>avatar</code></h3>
+<p>Image of yourself, this will appear in the heading of the main page.</p>
+<h3 id="avatar_size"><code>avatar_size</code></h3>
+<p>The width of the avatar, default is 8rem.</p>
+<h3 id="round_avatar"><code>round_avatar</code></h3>
+<p>If True, then the avatar will be cropped into a circle.</p>
+<h3 id="tagline"><code>tagline</code></h3>
+<p>A markdown string to be displayed in the header, smaller than the title. For professional profiles, this might be your job title or demographic information (e.g. pronouns, name pronunciation).</p>
+<h3 id="socials"><code>socials</code></h3>
+<p>List of social links to include, should be in the format:</p>
+<pre><code>- label: &lt;text to display if the icon doesn't load&gt;
+  link: &lt;url to link to when clicked&gt;
+  icon: &lt;name of the icon to use, from fontawesome&gt;
+</code></pre>
+<p>All of the free fontawesome icons are supported, you can also use <code>["brands", &lt;icon name&gt;]</code> to use a brand logo instead (such as GitHub, Facebook, BlueSky, etc.)</p>
+<h1 id="content-box">Content box</h1>
+<p>The below parameters are for configuring the content box, which contains the content of your site (and the header) and sits in front of the background.</p>
+<h3 id="content_box_opacity"><code>content_box_opacity</code></h3>
+<p>The box containing your site content will always be color you define for <a href="#shades"><code>base_color</code></a>, this parameter controls how opaque it is over the background.</p>
+<h3 id="content_box_padding"><code>content_box_padding</code></h3>
+<p>The distance between the horizontal edges of your content and the edges of the content box.</p>
+<h3 id="border_left-border_right"><code>border_left</code> / <code>border_right</code></h3>
+<p>The border on either side of the content box (defined using the same syntax as in <code>border-left</code>/<code>border-right</code> in CSS).</p>
+<h1 id="background">Background</h1>
+<p>The below parameters are for configuring the background of your site, which sits behind the content box.</p>
+<h3 id="background_1"><code>background</code></h3>
+<p>Background for the whole page, . Syntax is the same as the CSS <code>background</code> property. By default, the background color of your site will be the color you define for <a href="#shades"><code>base_color</code></a> and there is no background image.</p>
+<h3 id="background_color"><code>background_color</code></h3>
+<p>Color override for <code>background</code>. Whatever value is in here will be used for the CSS <code>background-color</code> property (which overrides any color set in <code>background</code>). </p>
+<h3 id="background_image"><code>background_image</code></h3>
+<p>Image override for <code>background</code>. Whatever value is in here will be used for the CSS <code>background-image</code> property (which overrides any color set in <code>background</code>). Unlike <code>background</code>, you do not need to include the <code>url(...)</code> wrapper - just a file path will suffice.</p>
+<h2 id="background-gradient">Background gradient</h2>
+<p>The background gradient is a gradient overlay which sits on top of your background but still behind the content box.</p>
+<h3 id="background_gradient_angle"><code>background_gradient_angle</code></h3>
+<p>The angle of the background gradient, by default this will be 45° (i.e. from bottom left to top right).</p>
+<h3 id="background_gradient_colors"><code>background_gradient_colors</code></h3>
+<p>The colors comprising the background gradient, as a list. These will be evenly spaced out, but you can use the same color multiple times to have it occupy more space. You can use any CSS color syntax, including <code>transparent</code> and <code>color-mix(&lt;color 1&gt; &lt;amount&gt;%, &lt;color 2&gt;)</code>. The default colors are:</p>
+<ul>
+<li>Your <a href="#shades"><code>mantle_color</code></a> at 80% opacity</li>
+<li><code>transparent</code></li>
+<li>Your <a href="#shades"><code>crust_color</code></a> at 20% opacity</li>
+</ul>
+<h1 id="footer">Footer</h1>
+<p>The below parameters are for configuring the content of the footer, which appears at the bottom of all pages on your site.</p>
+<h3 id="footer_1"><code>footer</code></h3>
+<p>Markdown content to include in the page footer</p>
+<h3 id="page_source"><code>page_source</code></h3>
+<p>Optionally add a link to this page's source code, for example on GitHub. Can be specified as either:</p>
+<pre><code>page_source:
+  link: &lt;link to your page source&gt;
+</code></pre>
+<p>or</p>
+<pre><code>page_source:
+  link: &lt;link to your page source&gt;
+  icon: [&lt;fontawesome icon group&gt;, &lt;fontawesome icon tag&gt;]
+</code></pre>
+<p>If specified without <code>icon</code>, the icon will default to the GitHub logo (equivalent to <code>icon: [brands, github]</code>)</p>
+<h1 id="colors">Colors</h1>
+<h2 id="scheme-colors">Scheme colors</h2>
+<p>The defining colors of your theme, ordered by importance. They're used for things like link colors, borders and hover effects. The attributes for scheme colors are:</p>
+<ul>
+<li><code>primary_color</code></li>
+<li><code>secondary_color</code></li>
+<li><code>tertiary_color</code></li>
+</ul>
+<p>By default, these are:</p>
+<table>
+<thead>
+<tr>
+<th>primary_color</th>
+<th>secondary_color</th>
+<th>tertiary_color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><i style='color: #05b2dc' class='fa-solid fa-circle color-preview'></i>#05b2dc</td>
+<td><i style='color: #ef9B0f' class='fa-solid fa-circle color-preview'></i>#ef9B0f</td>
+<td><i style='color: #ef3e36' class='fa-solid fa-circle color-preview'></i>#ef3e36</td>
+</tr>
+</tbody>
+</table>
+<h2 id="shades">Shades</h2>
+<p>Various shades of white (or black in dark mode) to use for backgrounds and faint outlines. These should start with <code>base_color</code> and get progressively lighter/darker from there. The attributes for shades are:</p>
+<ul>
+<li><code>base_color</code></li>
+<li><code>mantle_color</code></li>
+<li><code>crust_color</code></li>
+<li><code>overlay_color</code></li>
+</ul>
+<p>By default, these are:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>base_color</th>
+<th>mantle_color</th>
+<th>crust_color</th>
+<th>overlay_color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Light</td>
+<td><i style='color: #ffffff' class='fa-solid fa-circle color-preview'></i>#ffffff</td>
+<td><i style='color: #e5e4e5' class='fa-solid fa-circle color-preview'></i>#e5e4e5</td>
+<td><i style='color: #c4c2c5' class='fa-solid fa-circle color-preview'></i>#c4c2c5</td>
+<td><i style='color: #9B9B9E' class='fa-solid fa-circle color-preview'></i>#9B9B9E</td>
+</tr>
+<tr>
+<td>Dark</td>
+<td><i style='color: #343233' class='fa-solid fa-circle color-preview'></i>#343233</td>
+<td><i style='color: #373536' class='fa-solid fa-circle color-preview'></i>#373536</td>
+<td><i style='color: #3E3C3D' class='fa-solid fa-circle color-preview'></i>#3E3C3D</td>
+<td><i style='color: #646461' class='fa-solid fa-circle color-preview'></i>#646461</td>
+</tr>
+</tbody>
+</table>
+<h2 id="text-colors">Text colors</h2>
+<p>Colors to use for text in your site, one for the majority of text, another for text which is over a highlighted background. The two attributes for main text colors are:</p>
+<ul>
+<li><code>text_color</code></li>
+<li><code>hltext_color</code></li>
+</ul>
+<p>By default, these are:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>text_color</th>
+<th>hltext_color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Light</td>
+<td><i style='color: #343233' class='fa-solid fa-circle color-preview'></i>#343233</td>
+<td><i style='color: #ffffff' class='fa-solid fa-circle color-preview'></i>#ffffff</td>
+</tr>
+<tr>
+<td>Dark</td>
+<td><i style='color: #ffffff' class='fa-solid fa-circle color-preview'></i>#ffffff</td>
+<td><i style='color: #343233' class='fa-solid fa-circle color-preview'></i>#343233</td>
+</tr>
+</tbody>
+</table>
+<h3 id="background-specific-text-colors">Background-specific text colors</h3>
+<p>Each of the colors above has a matching parameter which is its name with <code>_color</code> replaced by <code>_text_color</code> (e.g. <code>primary_text_color</code> rather than <code>primary_color</code>), which defines the color for text when against that background color. These default to being either <code>text_color</code> or <code>hltext_color</code>, with the following defaults:</p>
+<ul>
+<li><code>primary_text_color</code>: hltext</li>
+<li><code>secondary_text_color</code>: hltext</li>
+<li><code>tertiary_text_color</code>: hltext</li>
+<li><code>base_text_color</code>: text</li>
+<li><code>mantle_text_color</code>: text</li>
+<li><code>crust_text_color</code>: text</li>
+<li><code>overlay_text_color</code>: hltext</li>
+</ul>
+<h2 id="darkmode-colors">Darkmode colors</h2>
+<p>To define the colors which are used in darkmode, use the same parameter names but with <code>_dark</code> on the end (e.g. <code>primary_color_dark</code> rather than <code>primary_color</code>)</p>
+<h1 id="fonts">Fonts</h1>
+<p>The following attributes define the font faces used in your site. Each of these can be the name of any font from <a href="https://fonts.google.com">Google Fonts</a></p>
+<h3 id="heading_font"><code>heading_font</code></h3>
+<p>Font to use for headings, default is Poppins</p>
+<h3 id="body_font"><code>body_font</code></h3>
+<p>Font to use for most text, default is Hind</p>
+<h3 id="mono_font"><code>mono_font</code></h3>
+<p>Monospace font to use for code, default is JetBrains Mono</p>
+<h3 id="emoji_font"><code>emoji_font</code></h3>
+<p>Font to use for emojis, default is Noto Color Emoji, which is packaged with Landing (i.e. no Google Fonts loading needed) and looks like this: </p>
+<p>🥰💀✌️🌴🐢🐐🍄⚽🍻👑📸😬👀🚨🏡🕊️🏆😻🌟🧿🍀🎨🍜</p>
+<h2 id="local-fonts">Local fonts</h2>
+<p>To use fonts from a local file rather than Google Fonts (which you may want to do for loading speed or GDPR in the EU), you can point to the file using the relevant parameter name with <code>_files</code> on the end (e.g. <code>body_font_files</code> for <code>body_font</code>). This parameter should be a set of subparameters for each font style you want to specify a file for (<code>regular</code>, <code>bold</code>, <code>italic</code> and <code>bold_italic</code>), using the path to the font file you want to use, relative to your site root. For example:</p>
+<pre><code class="language-yaml">body_font: Noto Sans
+body_font_files:
+  regular: assets/fonts/NotoSans_Regular.tff
+  bold: assets/fonts/NotoSans_Bold.tff
+  italic: assets/fonts/NotoSans_Italictff
+  bold_italic: assets/fonts/NotoSans_BoldItalic.tff
+</code></pre>
+<h3 id="a-note-about-emojis">A note about emojis...</h3>
+<p><code>emoji_font_files</code> only uses <code>regular</code> as emojis only come in one weight and style.</p>
+<h1 id="other">Other</h1>
+<h3 id="favicon"><code>favicon</code></h3>
+<p>Image in the browser tab, should be a path to an image file, ideally a 16x16px .png file.</p>
+<h3 id="toc_level"><code>toc_level</code></h3>
+<p>How many levels to include in a page-level table of contents? Use 0 to hide the table of contents altogether, use 1 to only show top level headings, use 2 to show top level headings and (when hovered) show the headings under each.</p>
+<h3 id="share_btn"><code>share_btn</code></h3>
+<p>Whether or not to include a share (<i class="fa fa-share-alt" alt="🔗"></i>) button in the top right of each page. Default is <code>true</code> (shown).</p>
+    <nav id="page-controls">
+      <a href="#content" id="return-top">
+        <i class="fa fa-arrow-up" alt="⇧"></i> Return to top
+      </a>
+    </nav>
+  </main>
+  </content>
+  <footer id="footer">
+    
+
+<p>Compiled from markdown using <a href="https://www.mkdocs.org/">MkDocs</a>. Theme is <a href="https://teparsons.github.io/mkdocs-landing/">Landing</a> by <a href="https://toddparsons.co.uk">Todd Parsons</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id=page-source href=https://github.com/TEParsons/mkdocs-landing><i class="fa-brands fa-github"></i> Page source</a>
+
+
+
+<script src="../search/main.js"></script>
+
+  </footer>
+</body>
+
+</html>

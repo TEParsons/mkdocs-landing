@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Links - Landing</title>
+    <style>
+      /* load heading font */
+      @font-face {
+        font-family: "Poppins";
+        src: url('../assets/fonts/poppins/Poppins-Regular.ttf');
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Poppins";
+        src: url('../assets/fonts/poppins/Poppins-Italic.ttf');
+        font-style: italic;
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Poppins";
+        src: url('../assets/fonts/poppins/Poppins-Bold.ttf');
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: "Poppins";
+        src: url('../assets/fonts/poppins/Poppins-BoldItalic.ttf');
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      /* load body font */
+      @font-face {
+        font-family: "Noto Sans";
+        src: url('../assets/fonts/noto_sans/NotoSans-Regular.ttf');
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Noto Sans";
+        src: url('../assets/fonts/noto_sans/NotoSans-Italic.ttf');
+        font-style: italic;
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Noto Sans";
+        src: url('../assets/fonts/noto_sans/NotoSans-Bold.ttf');
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: "Noto Sans";
+        src: url('../assets/fonts/noto_sans/NotoSans-BoldItalic.ttf');
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      /* load mono font */
+      @font-face {
+        font-family: "JetBrains Mono";
+        src: url('../assets/fonts/jetbrains_mono/JetBrainsMono-Regular.ttf');
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "JetBrains Mono";
+        src: url('../assets/fonts/jetbrains_mono/JetBrainsMono-Italic.ttf');
+        font-style: italic;
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "JetBrains Mono";
+        src: url('../assets/fonts/jetbrains_mono/JetBrainsMono-Bold.ttf');
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: "JetBrains Mono";
+        src: url('../assets/fonts/jetbrains_mono/JetBrainsMono-BoldItalic.ttf');
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      /* load emoji font */
+      @font-face {
+        font-family: "Noto Color Emoji";
+        src: url('../assets/fonts/emoji/NotoColorEmoji-Regular.ttf');
+        font-weight: 400;
+      }
+  
+      :root {
+        /* colors */
+        --primary: #05b2dc;
+        --secondary: #ef9B0f;
+        --tertiary: #ef3e36;
+        /* shades */
+        --base: #ffffff;
+        --mantle: #f5f4f5;
+        --crust: #d4d2d5;
+        --overlay: #aBaBaE;
+        --footer: #000000cc;
+        /* text */
+        --text: #343233;
+        --hltext: #ffffff;
+        color: var(--text);
+        /* background-specific text */
+        --primary-text: var(--hltext);
+        --secondary-text: var(--hltext);
+        --tertiary-text: var(--hltext);
+        --base-text: var(--text);
+        --mantle-text: var(--text);
+        --crust-text: var(--text);
+        --overlay-text: var(--hltext);
+        --footer-text: var(--hltext);
+        /* fonts */
+        --heading: Poppins, Noto Color Emoji;
+        --body: Noto Sans, Noto Color Emoji;
+        --mono: JetBrains Mono, Noto Color Emoji;
+        font-family: var(--body); 
+      }
+      /* dark mode */
+      @media (prefers-color-scheme: dark) {
+        :root {
+          /* colors */
+          --primary: #05b2dc;
+          --secondary: #ef9B0f;
+          --tertiary: #ef3e36;
+          /* shades */
+          --base: #343233;
+          --mantle: #373536;
+          --crust: #3E3C3D;
+          --overlay: #646461;
+          --footer: #00000022;
+          /* text */
+          --text: #ffffff;
+          --hltext: #343233;
+          color: var(--text);
+          /* background-specific text */
+          --primary-text: var(--text);
+          --secondary-text: var(--text);
+          --tertiary-text: var(--text);
+          --base-text: var(--text);
+          --mantle-text: var(--text);
+          --crust-text: var(--text);
+          --overlay-text: var(--hltext);
+          --footer-text: var(--text);
+        }
+      }
+      /* style settings */
+      header#header {
+        grid-template-columns: 8rem auto 8rem;
+      }
+      body#background {
+        background: fixed center/cover var(--base);
+        
+        
+      }
+      #background-gradient {
+        background: linear-gradient(
+          45deg, 
+          color-mix(in srgb, var(--mantle) 80%, transparent), transparent, color-mix(in srgb, var(--crust) 20%, transparent)
+        );
+      }
+      content#content {
+        padding: 0 3rem;
+        background: color-mix(in srgb, var(--base) 0%, transparent);
+        border-left: none;
+        border-right: none;
+      }
+      #avatar {
+        
+        border-radius: 1rem;
+        
+      }
+      footer#footer a {
+        color: #ef9B0f;
+      }
+      footer#footer a:hover {
+        color: #ef3e36;
+      }
+    </style>
+    <link rel="icon" type="image/x-icon" href=assets/branding/favicon.png>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/responsivity.css" rel="stylesheet">  
+    <script src="../search/main.js"></script>
+    <script src="https://kit.fontawesome.com/b57355f8ac.js" crossorigin="anonymous"></script>
+    <script id="altmetric-embed-js" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/altmetric_badges-e7ba41a192efc3e63f5d48f8a1916dec4b1b49c01075bc7b39481408957b3b28.js"></script>
+    <link id="altmetric-embed-css" rel="stylesheet" type="text/css" href="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed-59614f5c46b49b21eeef3bb28c4fb38d1e7069e8d014752fcb66e84942556802.css">
+    <script>
+      function on_share() {
+        navigator.share({
+          url: document.URL,
+          title: "Links -Landing",
+        });
+      }
+    </script>
+<link href="../css/links.css" rel="stylesheet">
+</head>
+
+<body id="background">
+  <div id="background-gradient"></div>
+  <content id="content">
+    
+<a id="share-btn" onclick="on_share()">
+  <i class="fa fa-share-alt" alt="🔗"></i>
+</a>
+
+    <header id="header">
+    
+    
+     
+    
+    <img id="avatar" src="../assets/branding/logo.png" />
+    
+
+    
+    
+    
+     
+    <p id="tagline">/<a href="http://ipa-reader.xyz/?text=lændɪŋ">lændɪŋ</a>/</p>
+
+    
+    
+    
+     
+    <h1 id="title"><a href=..>Landing</a></h1>
+
+    
+    
+    
+     
+    <ul id="socials">
+        
+        
+        
+        
+        
+        <li>
+            <a href="mailto:todd.e.parsons@gmail.com"><i class="fa-regular fa-at" alt="Email"></i></a>
+            <div class="social-label">Email</div>
+        </li>
+        
+        
+        
+        
+        
+        <li>
+            <a href="https://github.com/TEParsons/mkdocs-landing"><i class="fa-brands fa-github" alt="GitHub"></i></a>
+            <div class="social-label">GitHub</div>
+        </li>
+        
+        
+        
+        
+        
+        <li>
+            <a href="https://github.com/mkdocs/catalog?tab=readme-ov-file#-theming"><i class="fa-regular fa-bookmark" alt="Theme Gallery"></i></a>
+            <div class="social-label">Theme Gallery</div>
+        </li>
+        
+    </ul>
+
+    
+    
+</header>
+  <main id="page">
+    <h1 id="links-pages">Links pages</h1>
+<p>Landing includes a page template for an array of links, similar to <a href="https://linktr.ee/">LinkTree</a> or <a href="https://campsite.bio/">Campsite</a>. </p>
+<h2 id="specify-page-as-a-links-page">Specify page as a links page</h2>
+<p>To specify any page on your site (including the homepage!) as a links page, just add the following in the <a href="https://dev.to/dailydevtips1/what-exactly-is-frontmatter-123g">frontmatter</a> of the page:</p>
+<pre><code>template: links.html
+</code></pre>
+<h2 id="add-links">Add links</h2>
+<p>In the links page, any links which are top level headings (<code># [title](url)</code> in markdown) are styled like this:</p>
+<h1 id="landing"><a href="https://TEParsons.github.io/mkdocs-landing">Landing</a></h1>
+<p>You can also include an image within the link title (<code># [![](image url) title](url)</code> in markdown) and it will be styled as a thumbnail:</p>
+<h1 id="landing_1"><a href="https://TEParsons.github.io/mkdocs-landing"><img alt="" src="https://teparsons.github.io/mkdocs-landing/assets/branding/logo.png" /> Landing</a></h1>
+    <nav id="page-controls">
+      <a href="#content" id="return-top">
+        <i class="fa fa-arrow-up" alt="⇧"></i> Return to top
+      </a>
+    </nav>
+  </main>
+  </content>
+  <footer id="footer">
+    
+
+<p>Compiled from markdown using <a href="https://www.mkdocs.org/">MkDocs</a>. Theme is <a href="https://teparsons.github.io/mkdocs-landing/">Landing</a> by <a href="https://toddparsons.co.uk">Todd Parsons</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id=page-source href=https://github.com/TEParsons/mkdocs-landing><i class="fa-brands fa-github"></i> Page source</a>
+
+
+
+<script src="../search/main.js"></script>
+
+  </footer>
+</body>
+
+</html>

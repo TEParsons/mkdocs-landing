@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Home - Landing</title>
+    <style>
+      /* load heading font */
+      @font-face {
+        font-family: "Poppins";
+        src: url('assets/fonts/poppins/Poppins-Regular.ttf');
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Poppins";
+        src: url('assets/fonts/poppins/Poppins-Italic.ttf');
+        font-style: italic;
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Poppins";
+        src: url('assets/fonts/poppins/Poppins-Bold.ttf');
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: "Poppins";
+        src: url('assets/fonts/poppins/Poppins-BoldItalic.ttf');
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      /* load body font */
+      @font-face {
+        font-family: "Noto Sans";
+        src: url('assets/fonts/noto_sans/NotoSans-Regular.ttf');
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Noto Sans";
+        src: url('assets/fonts/noto_sans/NotoSans-Italic.ttf');
+        font-style: italic;
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Noto Sans";
+        src: url('assets/fonts/noto_sans/NotoSans-Bold.ttf');
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: "Noto Sans";
+        src: url('assets/fonts/noto_sans/NotoSans-BoldItalic.ttf');
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      /* load mono font */
+      @font-face {
+        font-family: "JetBrains Mono";
+        src: url('assets/fonts/jetbrains_mono/JetBrainsMono-Regular.ttf');
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "JetBrains Mono";
+        src: url('assets/fonts/jetbrains_mono/JetBrainsMono-Italic.ttf');
+        font-style: italic;
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "JetBrains Mono";
+        src: url('assets/fonts/jetbrains_mono/JetBrainsMono-Bold.ttf');
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: "JetBrains Mono";
+        src: url('assets/fonts/jetbrains_mono/JetBrainsMono-BoldItalic.ttf');
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      /* load emoji font */
+      @font-face {
+        font-family: "Noto Color Emoji";
+        src: url('assets/fonts/emoji/NotoColorEmoji-Regular.ttf');
+        font-weight: 400;
+      }
+  
+      :root {
+        /* colors */
+        --primary: #05b2dc;
+        --secondary: #ef9B0f;
+        --tertiary: #ef3e36;
+        /* shades */
+        --base: #ffffff;
+        --mantle: #f5f4f5;
+        --crust: #d4d2d5;
+        --overlay: #aBaBaE;
+        --footer: #000000cc;
+        /* text */
+        --text: #343233;
+        --hltext: #ffffff;
+        color: var(--text);
+        /* background-specific text */
+        --primary-text: var(--hltext);
+        --secondary-text: var(--hltext);
+        --tertiary-text: var(--hltext);
+        --base-text: var(--text);
+        --mantle-text: var(--text);
+        --crust-text: var(--text);
+        --overlay-text: var(--hltext);
+        --footer-text: var(--hltext);
+        /* fonts */
+        --heading: Poppins, Noto Color Emoji;
+        --body: Noto Sans, Noto Color Emoji;
+        --mono: JetBrains Mono, Noto Color Emoji;
+        font-family: var(--body); 
+      }
+      /* dark mode */
+      @media (prefers-color-scheme: dark) {
+        :root {
+          /* colors */
+          --primary: #05b2dc;
+          --secondary: #ef9B0f;
+          --tertiary: #ef3e36;
+          /* shades */
+          --base: #343233;
+          --mantle: #373536;
+          --crust: #3E3C3D;
+          --overlay: #646461;
+          --footer: #00000022;
+          /* text */
+          --text: #ffffff;
+          --hltext: #343233;
+          color: var(--text);
+          /* background-specific text */
+          --primary-text: var(--text);
+          --secondary-text: var(--text);
+          --tertiary-text: var(--text);
+          --base-text: var(--text);
+          --mantle-text: var(--text);
+          --crust-text: var(--text);
+          --overlay-text: var(--hltext);
+          --footer-text: var(--text);
+        }
+      }
+      /* style settings */
+      header#header {
+        grid-template-columns: 8rem auto 8rem;
+      }
+      body#background {
+        background: fixed center/cover var(--base);
+        
+        
+      }
+      #background-gradient {
+        background: linear-gradient(
+          45deg, 
+          color-mix(in srgb, var(--mantle) 80%, transparent), transparent, color-mix(in srgb, var(--crust) 20%, transparent)
+        );
+      }
+      content#content {
+        padding: 0 3rem;
+        background: color-mix(in srgb, var(--base) 0%, transparent);
+        border-left: none;
+        border-right: none;
+      }
+      #avatar {
+        
+        border-radius: 1rem;
+        
+      }
+      footer#footer a {
+        color: #ef9B0f;
+      }
+      footer#footer a:hover {
+        color: #ef3e36;
+      }
+    </style>
+    <link rel="icon" type="image/x-icon" href=assets/branding/favicon.png>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsivity.css" rel="stylesheet">  
+    <script src="search/main.js"></script>
+    <script src="https://kit.fontawesome.com/b57355f8ac.js" crossorigin="anonymous"></script>
+    <script id="altmetric-embed-js" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/altmetric_badges-e7ba41a192efc3e63f5d48f8a1916dec4b1b49c01075bc7b39481408957b3b28.js"></script>
+    <link id="altmetric-embed-css" rel="stylesheet" type="text/css" href="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed-59614f5c46b49b21eeef3bb28c4fb38d1e7069e8d014752fcb66e84942556802.css">
+    <script>
+      function on_share() {
+        navigator.share({
+          url: document.URL,
+          title: "Home -Landing",
+        });
+      }
+    </script>
+</head>
+
+<body id="background">
+  <div id="background-gradient"></div>
+  <content id="content">
+  
+<a id="share-btn" onclick="on_share()">
+  <i class="fa fa-share-alt" alt="🔗"></i>
+</a>
+
+  
+  <header id="header">
+    
+    
+     
+    
+    <img id="avatar" src="assets/branding/logo.png" />
+    
+
+    
+    
+    
+     
+    <p id="tagline">/<a href="http://ipa-reader.xyz/?text=lændɪŋ">lændɪŋ</a>/</p>
+
+    
+    
+    
+     
+    <h1 id="title"><a href=.>Landing</a></h1>
+
+    
+    
+    
+     
+    <ul id="socials">
+        
+        
+        
+        
+        
+        <li>
+            <a href="mailto:todd.e.parsons@gmail.com"><i class="fa-regular fa-at" alt="Email"></i></a>
+            <div class="social-label">Email</div>
+        </li>
+        
+        
+        
+        
+        
+        <li>
+            <a href="https://github.com/TEParsons/mkdocs-landing"><i class="fa-brands fa-github" alt="GitHub"></i></a>
+            <div class="social-label">GitHub</div>
+        </li>
+        
+        
+        
+        
+        
+        <li>
+            <a href="https://github.com/mkdocs/catalog?tab=readme-ov-file#-theming"><i class="fa-regular fa-bookmark" alt="Theme Gallery"></i></a>
+            <div class="social-label">Theme Gallery</div>
+        </li>
+        
+    </ul>
+
+    
+    
+</header>
+  
+  <main id="page">
+    <nav class="vertical" id="toc">
+
+<ul>
+
+<li class="nav-item">
+<a href="#configuration">Configuration</a>
+    
+    <ul>
+    
+    
+    <li class="nav-subitem">
+    <a href="#adding-a-links-page">Adding a links page</a>
+    </li>
+    
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#history">History</a>
+    
+    <ul>
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#gallery">Gallery</a>
+    
+    <ul>
+    
+    
+    <li class="nav-subitem">
+    <a href="#todd-parsons">Todd Parsons</a>
+    </li>
+    
+    
+    
+    <li class="nav-subitem">
+    <a href="#torillic-links">Torillic links</a>
+    </li>
+    
+    
+    
+    <li class="nav-subitem">
+    <a href="#ben-ambrose">Ben Ambrose</a>
+    </li>
+    
+    
+    
+    <li class="nav-subitem">
+    <a href="#catppuccin-example">Catppuccin example</a>
+    </li>
+    
+    
+    </ul>
+    
+</li>
+
+</ul>
+
+</nav>
+    <p>Landing is an mkdocs theme geared towards making a personal landing page, with simpler navigation and heavily customisable style options.</p>
+<h1 id="configuration">Configuration</h1>
+<p>With Landing I've tried to expose as much of the styling as possible to mkdocs, so that you can change up the theme to your own personal style as much as possible. Of course, there's nothing more flexible than writing your own css, so if you hit a wall with the config file I've also tried to make the html as simple as possible so you can easily add your own custom CSS.</p>
+<p>Click <a href="configuration/">here</a> for a full list of configuration options available.</p>
+<h2 id="adding-a-links-page">Adding a links page</h2>
+<p>If you'd like to add a links page, similar to <a href="https://linktr.ee/">LinkTree</a> or <a href="https://campsite.bio/">Campsite</a>, you can do so using Landing! Click <a href="links/">here</a> for more information and examples of how the links look.</p>
+<h1 id="history">History</h1>
+<p>Landing came out of me wanting to use mkdocs for <a href="#todd-parsons">my own personal landing page</a> - I made a custom .css file to sit alongside a generic mkdocs file and style it the way I wanted it. When implementing a <a href="#ben-ambrose">similar page for a friend</a> I realised that this basic structure could be fairly easily modified with a few key parameters to match a variety of different aesthetics.</p>
+<h1 id="gallery">Gallery</h1>
+<p>Below are some implementations of Landing with various styles, as an example.</p>
+<h2 id="todd-parsons">Todd Parsons</h2>
+<p>The configuration I've got on my own personal site - not all that different than default Landing, but note the different header layout (I made my avatar slightly bigger and changed the order via the <code>avatar_size</code> and <code>layout</code> parameters)</p>
+<iframe src=https://toddparsons.co.uk class=zoomed-out></iframe>
+
+<p><a href="https://toddparsons.co.uk"><i class="fa-regular fa-file-lines"></i> Full page</a></p>
+<p><a href="https://github.com/TEParsons/toddparsons/blob/main/mkdocs.yaml"><i class="fa-regular fa-file-code"></i> Config file</a></p>
+<h2 id="torillic-links">Torillic links</h2>
+<p>To show off how a links page can look, here's an example page which links to the various implementations of my D&amp;D-inspired theme, <a href="https://teparsons/github.io/torillic">Torillic</a>.</p>
+<iframe src=https://teparsons.github.io/mkdocs-landing/gallery/torillic class=zoomed-out></iframe>
+
+<p><a href="https://teparsons.github.io/mkdocs-landing/gallery/torillic"><i class="fa-regular fa-file-lines"></i> Full page</a></p>
+<p><a href="https://github.com/TEParsons/mkdocs-landing/blob/main/gallery/torillic/mkdocs.yaml"><i class="fa-regular fa-file-code"></i> Config file</a></p>
+<h2 id="ben-ambrose">Ben Ambrose</h2>
+<p>A site I built for a friend - this one relies on content being in <code>&lt;article&gt;</code> tags, and got a little funky with the <code>background_gradient</code> parameter.</p>
+<iframe src=https://benjaminambrose.github.io/benambrose/ class=zoomed-out></iframe>
+
+<p><a href="https://benjaminambrose.github.io/benambrose/"><i class="fa-regular fa-file-lines"></i> Full page</a></p>
+<p><a href="https://github.com/benjaminambrose/benambrose/blob/main/mkdocs.yaml"><i class="fa-regular fa-file-code"></i> Config file</a></p>
+<h2 id="catppuccin-example">Catppuccin example</h2>
+<p>I'm a big fan of Catppuccin, so of course the first example I made was in latte/mocha! If you want a site which straight away has lovely matching colors, you can't go far wrong with catppuccin, so please feel free to steal the mkdocs.yaml file below.</p>
+<iframe src=https://teparsons.github.io/mkdocs-landing/gallery/catppuccin class=zoomed-out></iframe>
+
+<p><a href="https://teparsons.github.io/mkdocs-landing/gallery/catppuccin"><i class="fa-regular fa-file-lines"></i> Full page</a></p>
+<p><a href="https://github.com/TEParsons/mkdocs-landing/blob/main/gallery/catppuccin/mkdocs.yaml"><i class="fa-regular fa-file-code"></i> Config file</a></p>
+    <nav id="page-controls">
+      <a href="#content" id="return-top">
+        <i class="fa fa-arrow-up" alt="⇧"></i> Return to top
+      </a>
+    </nav>
+  </main>
+  </content>
+  <footer id="footer">
+    
+
+<p>Compiled from markdown using <a href="https://www.mkdocs.org/">MkDocs</a>. Theme is <a href="https://teparsons.github.io/mkdocs-landing/">Landing</a> by <a href="https://toddparsons.co.uk">Todd Parsons</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id=page-source href=https://github.com/TEParsons/mkdocs-landing><i class="fa-brands fa-github"></i> Page source</a>
+
+
+
+<script src="search/main.js"></script>
+
+  </footer>
+</body>
+
+</html>
