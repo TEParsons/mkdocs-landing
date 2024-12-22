@@ -73,16 +73,17 @@ div#background-gradient {
     top: 0; bottom: 0; left: 0; right: 0;
 }
 
-#share {
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
+#share-btn {
+    position: relative;
+    margin-left: calc(100% - 2rem);
+    margin-bottom: -2rem;
+    top: 4rem;
     font-size: 2rem;
     padding: 1rem;
     color: var(--crust);
     border-radius: 100%;
 }
-#share:hover {
+#share-btn:hover {
     color: var(--text);
     background-color: var(--crust);
 }
