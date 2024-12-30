@@ -1,5 +1,7 @@
 Landing is an mkdocs theme geared towards making a personal landing page, with simpler navigation and heavily customisable style options.
 
+[![Preview of the mkdocs homepage](docs_src/assets/preview.png)](https://teparsons.github.io/mkdocs-landing/)
+
 # Configuration
 With Landing I've tried to expose as much of the styling as possible to mkdocs, so that you can change up the theme to your own personal style as much as possible. Of course, there's nothing more flexible than writing your own css, so if you hit a wall with the config file I've also tried to make the html as simple as possible so you can easily add your own custom CSS.
 
