@@ -36,3 +36,6 @@ mkdocs_landing = ["**/*.html", "**/*.css", "**/*.yml", "**/*.jpg", "**/*.png", "
 
 [project.entry-points."mkdocs.themes"]
 landing = "mkdocs_landing"
+
+[project.entry-points."mkdocs.plugins"]
+landing-preset = "mkdocs_landing.presets.plugin:LandingPresetsPlugin"

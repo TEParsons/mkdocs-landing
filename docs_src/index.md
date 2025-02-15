@@ -5,6 +5,19 @@ With Landing I've tried to expose as much of the styling as possible to mkdocs, 
 
 Click [here](configuration.md) for a full list of configuration options available.
 
+## Using preset configurations
+If you're not after super cusomisation, the mkdocs-landing package also includes a plugin which lets you choose from a set of pre-defined configurations ("presets"). I've tried to make this system easy to plug into too (for those *in the know*: the entry point is `mkdocs_landing.presets` and the base class is `mkdocs_landing.presets.base.BaseLandingPreset`), so in time I hope there'll eventually be people adding their own presets to Landing!
+
+To use a preset, add this to your `mkdocs.yaml` file:
+
+```yaml
+plugins:
+  - landing-preset: 
+      name: <name of your chosen preset>
+```
+
+Click [here](presets.md) for a list of all presets available and previews of how they look.
+
 ## Adding a links page
 If you'd like to add a links page, similar to [LinkTree](https://linktr.ee/) or [Campsite](https://campsite.bio/), you can do so using Landing! Click [here](links.md) for more information and examples of how the links look.
 
