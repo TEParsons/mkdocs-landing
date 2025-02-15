@@ -39,3 +39,6 @@ landing = "mkdocs_landing"
 
 [project.entry-points."mkdocs.plugins"]
 landing-preset = "mkdocs_landing.presets.plugin:LandingPresetsPlugin"
+
+[project.entry-points."mkdocs_landing.presets"]
+catppuccin = "mkdocs_landing.presets.catppuccin:CatppuccinLandingPreset"

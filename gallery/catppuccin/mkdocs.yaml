@@ -30,56 +30,6 @@ theme:
       link: https://reddit.com/r/catppuccin
       icon: [brands, reddit]
 
-  # style options
-  background_gradient_colors: 
-    - color-mix(in srgb, var(--crust) 100%, transparent)
-    - transparent
-    - color-mix(in srgb, var(--base) 80%, transparent)
-  round_avatar: True
-
-  # colours
-  primary_color: "#7287fd"
-  secondary_color: "#dc8a78"
-  tertiary_color: "#179299"
-  # shades
-  base_color: "#eff1f5"
-  mantle_color: "#e6e9ef"
-  crust_color: "#dce0e8"
-  overlay_color: "#9ca0b0"
-  # text
-  text_color: "#4c4f69"
-  hltext_color: var(--base)
-  # background-specific text
-  primary_text_color: var(--hltext)
-  secondary_text_color: var(--hltext)
-  tertiary_text_color: var(--hltext)
-  base_text_color: var(--text)
-  mantle_text_color: var(--text)
-  crust_text_color: var(--text)
-  overlay_text_color: var(--hltext)
-
-  # colours (dark)
-  primary_color_dark: "#b4befe"
-  secondary_color_dark: "#f5e0dc"
-  tertiary_color_dark: "#94e2d5"
-  # shades (dark)
-  base_color_dark: "#1e1e2e"
-  mantle_color_dark: "#181825"
-  crust_color_dark: "#11111b"
-  overlay_color_dark: "#6c7086"
-  # text (dark)
-  text_color_dark: "#cdd6f4"
-  hltext_color_dark: var(--base)
-  # background-specific text (dark)
-  primary_text_color_dark: var(--text)
-  secondary_text_color_dark: var(--text)
-  tertiary_text_color_dark: var(--text)
-  base_text_color_dark: var(--text)
-  mantle_text_color_dark: var(--text)
-  crust_text_color_dark: var(--text)
-  overlay_text_color_dark: var(--hltext)
-  
-  # fonts
-  heading_font: Noto Sans
-  body_font: Noto Sans
-  mono_font: Roboto Mono
+plugins:
+  - landing-preset: 
+      name: catppuccin
