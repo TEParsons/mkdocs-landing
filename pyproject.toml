@@ -1,6 +1,6 @@
 [project]
 name = "mkdocs-landing"
-version = "0.0.8"
+version = "0.1.0"
 authors = [
     {name = "Todd Parsons", email = "todd.e.parsons@gmail.com"}
 ]
@@ -42,3 +42,4 @@ landing-preset = "mkdocs_landing.presets.plugin:LandingPresetsPlugin"
 
 [project.entry-points."mkdocs_landing.presets"]
 catppuccin = "mkdocs_landing.presets.catppuccin:CatppuccinLandingPreset"
+save-the-date = "mkdocs_landing.presets.save_the_date:SaveTheDateLandingPreset"

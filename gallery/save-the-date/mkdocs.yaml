@@ -1,0 +1,18 @@
+site_name: Save The Date
+
+docs_dir: src
+draft_docs: vault
+site_dir: ../../docs/gallery/save-the-date
+
+theme:
+  name: landing
+  
+  header_layout:
+  - title
+  - tagline
+  tagline: |
+    Making free wedding landing pages easy
+
+plugins:
+  - landing-preset: 
+      name: save-the-date
