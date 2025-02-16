@@ -227,7 +227,6 @@ nav#toc {
     text-align: right;
     top: 4rem;
     width: 100%;
-    margin-left: calc(-100% - 5rem);
     height: 0;
 }
 

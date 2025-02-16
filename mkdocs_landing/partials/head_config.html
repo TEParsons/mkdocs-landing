@@ -176,6 +176,9 @@
       footer#footer a:hover {
         color: {{config.theme.tertiary_color_dark}};
       }
+      nav#toc {
+        margin-left: calc(-100% - {{config.theme.content_box_padding}} - 2rem);
+      }
     </style>
     <link rel="icon" type="image/x-icon" href={{ config.theme.favicon }}>
     <link href="{{ 'css/style.css' | url }}" rel="stylesheet">
