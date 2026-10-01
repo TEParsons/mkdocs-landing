@@ -1,0 +1,22 @@
+# style options
+border_left: 2px solid var(--overlay)
+background_color: var(--base)
+content_box_padding: 8rem
+
+# colours
+primary_color: "#a37871"
+secondary_color: "#a37871"
+tertiary_color: "#648381"
+# shades
+base_color: "#ffffff"
+mantle_color: "#fdf3ed"
+crust_color: "#fbe6da"
+overlay_color: "#e0ece5"
+# text
+text_color: "#171614"
+hltext_color: var(--base)
+
+# fonts
+heading_font: MonteCarlo
+body_font: Benne
+mono_font: Dancing Script

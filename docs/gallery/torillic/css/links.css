@@ -1,0 +1,53 @@
+/**
+CSS unique to the links.html template
+**/
+
+main h1 {
+    margin: 0;
+}
+
+main h1 > a {
+    border: 2px solid var(--crust);
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-left: -1rem;
+    background-color: var(--base);
+    font-family: var(--body);
+
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    justify-items: start;
+    grid-gap: 2rem;
+}
+
+main h1 > a:hover {
+    background-color: var(--mantle);
+}
+
+main h1 > a img {
+    border: none;
+    margin: 0;
+    padding: 0;
+    min-width: 2em;
+    width: 2em;
+    height: 2em;
+    object-fit: contain;
+}
+
+
+/*
+    Double the size on various elements when using a touch pointer
+*/
+@media (pointer:coarse) {
+    main h1 > a {
+        border-radius: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        margin-left: -2rem;
+        padding: 4rem 5rem;
+    }
+}

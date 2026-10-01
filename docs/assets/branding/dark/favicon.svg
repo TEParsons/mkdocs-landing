@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,0,-569)">
+        <g id="dark-favicon" serif:id="dark/favicon" transform="matrix(0.333333,0,0,0.333333,0,569)">
+            <rect x="0" y="0" width="48" height="48" style="fill:none;"/>
+            <g id="Landing-Strip" serif:id="Landing Strip" transform="matrix(3,0,0,3,0,-6)">
+                <path d="M1,16L5.569,10.377C5.859,10.02 6.343,9.884 6.777,10.038C7.21,10.192 7.5,10.602 7.5,11.062L7.5,14.067C7.5,14.604 7.108,15.06 6.578,15.142L1,16ZM15,16L9.422,15.142C8.892,15.06 8.5,14.604 8.5,14.067L8.5,11.062C8.5,10.602 8.79,10.192 9.223,10.038C9.657,9.884 10.141,10.02 10.431,10.377L15,16Z" style="fill:rgb(245,244,245);"/>
+            </g>
+            <g id="Aeroplane" transform="matrix(3,0,0,-3,0,51)">
+                <path d="M9.001,10.001C8.448,9.448 7.552,9.448 6.999,10.001C5.064,11.936 1,16 1,16C1,16 5.784,13.95 7.442,13.239C7.798,13.086 8.202,13.086 8.558,13.239C10.216,13.95 15,16 15,16C15,16 10.936,11.936 9.001,10.001Z" style="fill:rgb(5,178,220);"/>
+            </g>
+        </g>
+    </g>
+</svg>
